@@ -12,36 +12,57 @@ body {
 }
 
 header {
-    background-color: #1f2326;
+    background-color: #20232a;
     padding: 1em;
     text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 header img {
-    max-width: 100px;
+    max-width: 120px;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     padding-top: 1em;
+    list-style: none; /* Elimina los puntos de las listas */
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 25px;
+    position: relative;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #ff4654;
+    color: #ffffff;
     font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    background: linear-gradient(145deg, transparent, transparent);
+    transition: all 0.3s ease;
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+nav ul li a:hover, nav ul li a:focus {
+    background: linear-gradient(145deg, #ff4655, #ff6347);
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(255,70,85,0.5);
 }
 
 #hero {
-    background-image: url('https://es.gamewallpapers.com/download.php?img=wallpaper_valorant_01_1920x1080.jpg');
+    background-image: url('https://i.pinimg.com/originals/f2/38/e8/f238e8b339824587f493aca2d765a6ba.gif');
     background-size: cover;
-    padding: 50px 20px;
+    padding: 200px 20px;
     text-align: center;
+}
+#hero h1 {
+    font-family: 'Impact', sans-serif; /* Canvia la tipografia a una més impactant */
+    font-size: 60px; /* Augmenta la grandària de la lletra */
+    color: #ff4654; /* Canvia el color a vermell per a més visibilitat */
+    text-shadow: 2px 2px 4px #000000; /* Afegeix ombra al text per a millorar la legibilitat sobre el fons dinàmic */
 }
 
 #latest-news h2 {
@@ -62,9 +83,24 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        padding: 0;
     }
 
     nav ul li {
         margin: 10px 0;
     }
+
+    nav ul li a {
+        font-size: 1em; /* Ajusta el tamaño de la fuente para dispositivos móviles */
+    }
 }
+
+
+
+
+
+
+
+
+
+
