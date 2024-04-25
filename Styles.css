@@ -49,6 +49,24 @@ nav ul li a {
     border-bottom: 1px solid #ff4654;
 }
 
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 300px;
+    background-color: #1f2326;
+    margin: 20px;
+    padding: 20px;
+}
+
+.news-item h3 {
+    color: #ff4654;
+}
+
 footer {
     background-color: #1f2326;
     text-align: center;
@@ -66,5 +84,9 @@ footer {
 
     nav ul li {
         margin: 10px 0;
+    }
+
+    .news-item {
+        width: 100%;
     }
 }
