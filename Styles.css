@@ -108,16 +108,25 @@ footer {
         margin: 10px 0;
     }
 
-<<<<<<< HEAD
-    .news-item {
-        width: 100%;
-=======
     nav ul li a {
         font-size: 1em; /* Ajusta el tamaño de la fuente para dispositivos móviles */
->>>>>>> 2700a43abd3cc3b0726d1c70f59351abba8fb587
     }
 }
 
+.news-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto igual al del resto del documento */
+    border: 1px solid #ccc; /* Borde ligero para el recuadro */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaciado entre noticias */
+    background-color: #f9f9f9; /* Fondo más claro para mayor visibilidad */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.news-link:hover {
+    background-color: #e2e2e2; /* Cambio de color al pasar el mouse */
+}
 
 
 
