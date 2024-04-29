@@ -1,0 +1,64 @@
+/* Estilos para los títulos en las guías */
+#guides h1, #guides h2, #guides h3 {
+    font-family: 'Burbank Big Condensed', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#guides h1 {
+    color: blue;
+    font-size: 3.5vw; /* Usamos unidades de vista de ancho para que el tamaño del título sea relativo al ancho de la pantalla */
+}
+
+#guides h2 {
+    color: rgb(255, 255, 255);
+    font-size: 2.5vw; /* Usamos unidades de vista de ancho para que el tamaño del título sea relativo al ancho de la pantalla */
+}
+
+#guides h3 {
+    color: orange;
+    font-size: 2vw; /* Usamos unidades de vista de ancho para que el tamaño del título sea relativo al ancho de la pantalla */
+}
+
+/* Estilos para las descripciones en las guías */
+#guides p {
+    font-family: 'Arial', sans-serif; /* Cambiamos la fuente a Arial para las descripciones */
+    color: rgb(248, 0, 0);
+    font-size: 1.6vw; /* Usamos unidades de vista de ancho para que el tamaño de la descripción sea relativo al ancho de la pantalla */
+    line-height: 1.5;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombreado para las descripciones */
+}
+
+/* Estilos para los artículos dentro de la sección de guías */
+#guides article {
+    max-width: 800px; /* Establece un ancho máximo para el contenido de los artículos */
+    margin: 0 auto 20px; /* Centra los artículos horizontalmente y agrega espacio en la parte inferior */
+    padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho */
+}
+
+/* Estilos para las imágenes en los artículos de guías */
+#guides article img {
+    max-width: 100%; /* La imagen no debe exceder el ancho del artículo */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    display: block;
+    margin: 0 auto 15px; /* Centra la imagen horizontalmente y agrega espacio en la parte inferior */
+}
+
+/* Estilos para los títulos en los artículos de guías */
+#guides article h3 {
+    margin-top: 0; /* Elimina el espacio superior predeterminado de los títulos */
+}
+
+/* Estilos para los párrafos en los artículos de guías */
+#guides article p {
+    margin-bottom: 15px; /* Agrega espacio en la parte inferior de los párrafos */
+}
+
+/* Estilos para los iframes de video en las guías */
+#guides iframe {
+    max-width: 100%; /* El vídeo no debe exceder el ancho del contenedor */
+    width: 80%; /* Ajustamos el ancho del vídeo al 80% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción de aspecto */
+    display: block;
+    margin: 0 auto 15px; /* Centramos el vídeo horizontalmente y agregamos espacio en la parte inferior */
+}
