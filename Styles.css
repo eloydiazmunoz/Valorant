@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #0e0e10;
-    color: #fff;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 header {
@@ -52,22 +52,84 @@ nav ul li a:hover, nav ul li a:focus {
     box-shadow: 0 2px 10px rgba(255,70,85,0.5);
 }
 
+nav ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255,99,71,0.5); /* Contorno visible para foco de teclado */
+}
+
 #hero {
     background-image: url('https://i.pinimg.com/originals/f2/38/e8/f238e8b339824587f493aca2d765a6ba.gif');
     background-size: cover;
     padding: 200px 20px;
     text-align: center;
 }
+
 #hero h1 {
-    font-family: 'Impact', sans-serif; /* Canvia la tipografia a una més impactant */
-    font-size: 60px; /* Augmenta la grandària de la lletra */
-    color: #ff4654; /* Canvia el color a vermell per a més visibilitat */
-    text-shadow: 2px 2px 4px #000000; /* Afegeix ombra al text per a millorar la legibilitat sobre el fons dinàmic */
+    font-family: 'Impact', sans-serif; /* Cambia la tipografía a una más impactante */
+    font-size: 60px; /* Aumenta la tamaño de la letra */
+    color: #ff4654; /* Cambia el color a rojo para más visibilidad */
+    text-shadow: 2px 2px 4px #000000; /* Añade sombra al texto para mejorar la legibilidad sobre el fondo dinámico */
 }
 
 #latest-news h2 {
     padding: 20px;
     border-bottom: 1px solid #ff4654;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.news-item {
+    width: 300px;
+    background-color: #1f2326;
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Añadido transform para suavizar el efecto */
+    color: #fff; /* Cambio del color del texto a blanco */
+}
+
+.news-item::before,
+.news-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(255, 70, 85, 0.5);
+    width: 50%;
+    transition: all 0.3s ease;
+}
+
+.news-item::before {
+    left: -50%;
+}
+
+.news-item::after {
+    right: -50%;
+}
+
+.news-item:hover::before {
+    left: 100%;
+}
+
+.news-item:hover::after {
+    right: 100%;
+}
+
+.news-item:hover {
+    box-shadow: 0 0 20px rgba(255, 70, 85, 0.5);
+    background-color: #ff4655;
+    transform: scale(1.03); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+.news-item h3 {
+    color: #ffffff;
 }
 
 footer {
@@ -95,12 +157,118 @@ footer {
     }
 }
 
+.news-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* Mantiene el color del texto igual al del resto del documento */
+    padding: 10px;
+    margin-bottom: 10px; /* Espaciado entre noticias */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
 
+.news-link:hover {
+    background-color: #e2e2e2; /* Cambio de color al pasar el mouse */
+}
+/* Estils Específics per a la Pàgina Sobre Nosaltres */
+#team h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.2em; /* Mida més gran per als noms */
+    color: #ff6347; /* Color distintiu */
+    text-transform: uppercase; /* Text en majúscules per a més impacte */
+    margin-top: 20px;
+    text-shadow: 1px 1px 2px black; /* Ombra lleugera per millorar la llegibilitat */
+}
 
+#team p {
+    font-size: 1.2em; /* Mida més gran per al text descriptiu */
+    color: #ffffff; /* Text blanc per contrast */
+    margin-top: 10px;
+    padding: 0 20px; /* Padding per a una millor fluïdesa del text */
+}
 
+/* Millora visual per als articles de l'equip */
+article {
+    background-color: #1f2326; /* Fons fosc per a contrast amb el text */
+    border-left: 5px solid #ff6347; /* Vora lateral per destacar */
+    padding: 20px;
+    margin-bottom: 30px; /* Més espai entre articles */
+    transition: transform 0.3s ease-in-out; /* Transició suau per a efectes hover */
+}
 
+article:hover {
+    transform: translateY(-10px); /* Elevar l'article al passar el ratolí */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Ombra més definida en hover */
+}
 
+/* Estil del títol principal de la pàgina */
+main h1 {
+    font-size: 3em; /* Mida molt gran per al títol principal */
+    color: #ff4655; /* Color cridaner per al títol */
+    text-shadow: 2px 2px 4px #000; /* Ombra per destacar el títol sobre qualsevol fons */
+    margin-bottom: 30px; /* Espai després del títol */
+}
+/* Estilo adicional para el botón "Ver Artículo" en index.html */
+.news-link {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
 
+.news-link:hover {
+    background-color: #ff5f6d;
+}
 
+/* Estilo adicional para el botón "Ver Artículo" en noticies.html */
+.news-detail-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff4655;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
 
+.news-detail-link:hover {
+    background-color: #ff5f6d;
+}
 
+/* Estilo adicional para la presentación de noticias detalladas en noticies.html */
+.news-detail {
+    background-color: #1f2326;
+    color: #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.news-detail h2 {
+    color: #ff4655;
+    margin-bottom: 10px;
+}
+
+.news-detail p {
+    margin-bottom: 10px;
+}
+
+#hero {
+    background-image: url('https://i.pinimg.com/originals/f2/38/e8/f238e8b339824587f493aca2d765a6ba.gif');
+    background-size: cover;
+    padding: 200px 20px;
+    text-align: center;
+    background-color: transparent; /* Fondo transparente */
+}
+
+#hero h1 {
+    font-family: 'Impact', sans-serif; /* Cambia la tipografía a una más impactante */
+    font-size: 60px; /* Aumenta el tamaño de la letra */
+    color: #ff4654; /* Cambia el color a rojo para mayor visibilidad */
+    text-shadow: 2px 2px 4px #000000; /* Agrega sombra al texto para mejorar la legibilidad sobre el fondo dinámico */
+}
