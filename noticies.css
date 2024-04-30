@@ -9,11 +9,12 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #1c1c1c;
     color: #fff;
+    margin: 0;
 }
 
 header {
-    background-color: #900;
-    padding: 1em;
+    background-color: #333;
+    padding: 1em 0;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
@@ -27,6 +28,7 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    padding: 0;
 }
 
 nav ul li {
@@ -42,14 +44,15 @@ nav ul li a {
     transition: background 0.3s, color 0.3s;
 }
 
-nav ul li a:hover, nav ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     background-color: #ff6347;
     color: #000;
     border-radius: 5px;
 }
 
 #hero {
-    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
+    background-image: url('https://i.redd.it/zyipc46j76r41.gif');
     background-size: cover;
     background-position: center;
     padding: 200px 20px;
@@ -60,20 +63,30 @@ nav ul li a:hover, nav ul li a.active {
 #hero:before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.7) 0%,
+        rgba(0, 0, 0, 0.7) 100%
+    );
     z-index: 1;
 }
 
 #hero h1 {
     position: relative;
     z-index: 2;
-    color: #ff6347;
+    color: #fff;
     font-size: 5em;
     font-weight: bold;
     text-transform: uppercase;
     text-shadow: 2px 2px 8px #000;
+}
+
+#latest-news {
+    padding: 50px 0;
 }
 
 #latest-news h2 {
@@ -93,17 +106,18 @@ nav ul li a:hover, nav ul li a.active {
     background-color: #292929;
     margin: 20px;
     padding: 20px;
-    width: calc(50% - 40px);
+    width: calc(33.33% - 40px);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .news-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 30px rgba(255, 0, 0, 0.5);
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
 }
 
-.news-item h3, .news-item p {
+.news-item h3,
+.news-item p {
     color: #fff;
 }
 
@@ -122,10 +136,10 @@ button:hover {
 }
 
 footer {
-    background-color: #900;
+    background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -146,6 +160,6 @@ footer {
     }
 
     .news-item {
-        width: calc(100% - 40px);
+        width: calc(50% - 40px);
     }
 }
