@@ -85,7 +85,7 @@ main h1 {
 }
 
 #team p {
-    text-indent: 20px; /* Indent for paragraph starts */
+    text-align: justify;
     margin-bottom: 20px; /* Space before next content */
 }
 

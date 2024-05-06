@@ -52,7 +52,7 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 main {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 20px auto;
     padding: 0 20px;
 }

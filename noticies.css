@@ -1,165 +1,146 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #1c1c1c;
+    font-family: 'Roboto', sans-serif;
+    background-color: #0a0a0a;
     color: #fff;
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #333;
-    padding: 1em 0;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background: linear-gradient(145deg, #ff4655, #2b2d42);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-size: cover;
+    background-position: center;
 }
 
 header img {
-    max-width: 100px;
-    border-radius: 50%;
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+    padding: 0 20px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
+    font-size: 1.1em;
     font-weight: bold;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    transition: background 0.3s, color 0.3s;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    background-color: #ff6347;
-    color: #000;
-    border-radius: 5px;
+nav ul li a:hover, nav ul li a:focus {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+}
+
+main {
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
 #hero {
-    background-image: url('https://i.redd.it/zyipc46j76r41.gif');
-    background-size: cover;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5562ed28-e365-4049-855f-08212cbd0477/deywt2s-44fab34a-e668-43b6-adc5-ec49c07cf348.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NjJlZDI4LWUzNjUtNDA0OS04NTVmLTA4MjEyY2JkMDQ3N1wvZGV5d3Qycy00NGZhYjM0YS1lNjY4LTQzYjYtYWRjNS1lYzQ5YzA3Y2YzNDguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.I4tQH08__flz7aWhB1YyupWvz7fdEGGEwRpfMDLezgM');
+    background-size: 100% auto; 
     background-position: center;
-    padding: 200px 20px;
     text-align: center;
+    padding: 120px 20px;
     position: relative;
+    color: #ffffff;
 }
 
-#hero:before {
-    content: "";
+#hero::before {
+    content: '';
     position: absolute;
     top: 0;
-    left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0.7) 0%,
-        rgba(0, 0, 0, 0.7) 100%
-    );
-    z-index: 1;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
 #hero h1 {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    font-size: 5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 8px #000;
+    font-size: 4em;
+    font-weight: 700;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 #latest-news {
-    padding: 50px 0;
-}
-
-#latest-news h2 {
-    margin-top: 40px;
-    color: #ff6347;
-    font-size: 2.5em;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
 }
 
 .news-link {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    text-decoration: none; 
+    color: inherit;
 }
 
 .news-item {
-    background-color: #292929;
-    margin: 20px;
+    background-color: #222222;
     padding: 20px;
-    width: calc(33.33% - 40px);
     border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
 .news-item:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
-}
-
-.news-item h3,
-.news-item p {
-    color: #fff;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
 }
 
 button {
-    background-color: #ff6347;
-    color: #000;
+    background-color: #ff4655;
+    color: white;
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
     cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 button:hover {
-    background-color: #db504a;
+    background-color: #ff2e3f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    padding: 20px 0;
+    background-color: #2b2d42;
+    color: #fff;
+    font-size: 0.9em;
+    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
+    background-size: cover;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li a {
-        font-size: 1em;
-        padding: 8px 10px;
-    }
-
-    #hero {
-        padding: 100px 20px;
-    }
-
-    .news-item {
-        width: calc(50% - 40px);
-    }
+footer p {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
