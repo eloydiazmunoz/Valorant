@@ -13,39 +13,46 @@ body {
 }
 
 header {
-    background: linear-gradient(to right, #900, #900); /* Rich red gradient */
-    padding: 1rem;
-    text-align: center;
+    background: linear-gradient(145deg, #ff4655, #2b2d42);
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header img {
-    width: 80px; /* Smaller logo */
+    width: 120px;
     height: auto;
-    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+header img:hover {
+    transform: scale(1.1);
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
     list-style: none;
+    padding: 0;
+    display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
+    padding: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    font-size: 1.1rem;
+    color: #ffffff;
+    font-size: 1.1em;
     font-weight: bold;
-    padding: 8px 16px;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover, nav ul li a.active {
-    color: #ff6347; /* Highlight for active/hover state */
-    background-color: #292929; /* Subtle background for hover/active links */
-    border-radius: 5px;
+nav ul li a:hover,
+nav ul li a.active {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
 }
 
 main {

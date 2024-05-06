@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Descripción de tu sitio web">
+    <title>Contacte</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.css">
 </head>
 <body>
-    
+    <header>
+        <img src="https://wallpapercave.com/wp/wp7282546.jpg" alt="Logotip de Valorant">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inici</a></li>
+                <li><a href="noticies.html">Notícies</a></li>
+                <li><a href="guies.html">Guies</a></li>
+                <li><a href="about.html">Sobre Nosaltres</a></li>
+                <li><a href="contact.html">Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact-form">
+            <h2>Contacte</h2>
+            <!-- Cambia el atributo 'action' para que apunte a tu archivo PHP -->
+            <form action="enviar_correo.php" method="POST">
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Correu electrònic:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Missatge:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Web de Fans de Valorant</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
