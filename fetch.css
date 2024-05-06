@@ -127,34 +127,32 @@ footer p {
     border-radius: 5px;
 }
 .agent-select {
-    padding: 12px;
-    font-size: 1.1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    background-color: #fff;
-    color: #333;
-    appearance: none;
+    width: 100%; /* Ajusta al ancho del contenedor */
+    padding: 12px 16px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif; /* Asegura consistencia tipográfica */
+    border: 2px solid #ccc; /* Borde más definido */
+    border-radius: 8px; /* Bordes redondeados */
+    appearance: none; /* Elimina el estilo por defecto en navegadores */
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%23333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>');
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
     background-repeat: no-repeat;
-    background-position: right 10px top 50%;
+    background-position: right 10px center;
     cursor: pointer;
 }
 
 .agent-select:hover {
-    border-color: #666;
+    border-color: #888; /* Cambia el color del borde al pasar el mouse */
 }
 
 .agent-select:focus {
     outline: none;
-    border-color: #ff4655;
-    box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.2);
+    border-color: #ff4655; /* Cambia el color del borde al enfocar */
+    box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.4); /* Sombra exterior para mejorar el foco */
 }
 
 .agent-select option {
-    background-color: #fff;
-    color: #333;
-    font-weight: normal;
+    padding: 10px; /* Añade padding para hacer más clickeable */
 }

@@ -1,13 +1,17 @@
-/* Estilos para el formulario de contacto */
-
 #contact-form {
-    width: 80%;
-    margin: 80px auto; /* Ajuste de margen para separar el formulario del menú */
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 #contact-form h2 {
-    margin-bottom: 20px;
+    color: #333;
+    margin-bottom: 30px;
 }
 
 #contact-form form {
@@ -17,34 +21,46 @@
 }
 
 #contact-form label {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
 }
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
+    padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+    font-size: 14px;
 }
 
 #contact-form textarea {
-    height: 150px;
+    height: 120px;
+    resize: none;
 }
 
-#contact-form button {
-    padding: 10px 20px;
+#contact-form input[type="submit"] {
+    width: 50%;
+    padding: 10px;
     background-color: #007bff;
-    color: #fff;
+    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
     transition: background-color 0.3s;
 }
 
-#contact-form button:hover {
+#contact-form input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    #contact-form {
+        width: 90%;
+        margin-top: 20px;
+    }
 }
