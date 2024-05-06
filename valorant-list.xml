@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agents>
+    <agent id="1">
+        <name>Jett</name>
+        <role>Duelista</role>
+        <abilities>
+            <ability>
+                <name>Núvol Ràpid</name>
+                <description>Llança un projectil que s'expandeix en una núvol que bloqueja la visió breument en impactar amb una superfície.</description>
+            </ability>
+            <ability>
+                <name>Ascens</name>
+                <description>Propulsa cap amunt després d'un breu retard.</description>
+            </ability>
+            <ability>
+                <name>Empenta Ràpida</name>
+                <description>Desplaça't immediatament una curta distància en la direcció en què et mous.</description>
+            </ability>
+            <ability>
+                <name>Tormenta de Ganivets</name>
+                <description>Equipat amb un conjunt de ganivets llançadors molt precisos que es recarreguen en matar un oponent.</description>
+            </ability>
+        </abilities>
+        <bio>Jett té un estil de lluita àgil i acrobàtic que li permet prendre riscos que ningú més pot.</bio>
+    </agent>
+    <agent id="2">
+        <name>Omen</name>
+        <role>Controlador</role>
+        <abilities>
+            <ability>
+                <name>Pas Amagat</name>
+                <description>Després d'un retard, desmaterialitza't i teletransporta't una curta distància.</description>
+            </ability>
+            <ability>
+                <name>Paranoia</name>
+                <description>Envia una ombra etèria en línia recta, causant ceguesa temporal a qualsevol que toqui.</description>
+            </ability>
+            <ability>
+                <name>Coberta Fosca</name>
+                <description>Llança una esfera que esclata en una esfera d'ombra que ofusca la visió. Es pot carregar per augmentar la distància.</description>
+            </ability>
+            <ability>
+                <name>Des de les Ombres</name>
+                <description>Teletransporta't a través del mapa, però pot ser interromput per enemics. Omen apareix com una Ombra que pot ser destruïda per cancel·lar el teletransport.</description>
+            </ability>
+        </abilities>
+        <bio>Omen és un fantasma d'un record, utilitzant el engany i la confusió per controlar el camp de batalla.</bio>
+    </agent>
+    <agent id="3">
+        <name>Cypher</name>
+        <role>Sentinella</role>
+        <abilities>
+            <ability>
+                <name>Emboscada Cibernetica</name>
+                <description>Col·loca una trampa filosa que esclata quan detecta a enemics a prop, deixant-los vulnerables a la seva localització durant un curt període de temps.</description>
+            </ability>
+            <ability>
+                <name>Camera Espia</name>
+                <description>Col·loca una càmera espia controlable. En posar-la, podràs veure l'angle de visió de la càmera. Activa-la per prendre el control de la càmera. Reutilitza la càmera quan estigui inactiu per recollir-la i posar-la en un altre lloc.</description>
+            </ability>
+            <ability>
+                <name>Caiac Neural</name>
+                <description>Llança un dard que paralitza i localitza els enemics afectats si es troben en el rati de visió de l'hàcker.</description>
+            </ability>
+            <ability>
+                <name>Robar-Emparar</name>
+                <description>Roba la posició de l'enemic mort.</description>
+            </ability>
+        </abilities>
+        <bio>Cypher és un mestre en la recollida d'informació i control del terreny, mitjançant trampes i vigilància.</bio>
+    </agent> <agent id="4">
+        <name>Breach</name>
+        <role>Iniciador</role>
+        <abilities>
+            <ability>
+                <name>Fissura</name>
+                <description>Llança un carregador que atravesa els murs. Impacta els agents del costat de la pared.</description>
+            </ability>
+            <ability>
+                <name>Terremot</name>
+                <description>Una serie de petits temblores que s'augmenten amb el temps, estorben la visió i el moviment dels agents.</description>
+            </ability>
+            <ability>
+                <name>Onada</name>
+                <description>Llança una onada de concussió que atordit els agents.</description>
+            </ability>
+            <ability>
+                <name>Retretada</name>
+                <description>Desplaca't ràpidament en la direcció en què estiguis mirant.</description>
+            </ability>
+        </abilities>
+        <bio>Breach és un guerrer dur i sense compromisos que trencarà qualsevol línia per obrir el camí.</bio>
+    </agent>
+    
+    <agent id="5">
+        <name>Sage</name>
+        <role>Sanadora</role>
+        <abilities>
+            <ability>
+                <name>Orbe Curatiu</name>
+                <description>Llança un orbe que cura els aliats a prop d'on impacta.</description>
+            </ability>
+            <ability>
+                <name>Orbe Barrera</name>
+                <description>Llança un orbe que crea una barrera sòlida. Si es mante dura prou temps, s'escampa a una super barrera.</description>
+            </ability>
+            <ability>
+                <name>Ressurrecció</name>
+                <description>Resucita un aliada mort en el punt de mort amb tota la salut.</description>
+            </ability>
+            <ability>
+                <name>Lluïment</name>
+                <description>Crei una pared de glaç que bloqueja la visió i es pot caminar per dins d'ella.</description>
+            </ability>
+        </abilities>
+        <bio>Sage és una companya de team fiable, capaç de curar ferides i ressuscitar aliats.</bio>
+    </agent>
+    
+    <agent id="6">
+        <name>Brimstone</name>
+        <role>Controlador</role>
+        <abilities>
+            <ability>
+                <name>Crit Granata</name>
+                <description>Llança una granada que es transforma en fum de llarga durada.</description>
+            </ability>
+            <ability>
+                <name>Incendiari</name>
+                <description>Llança un marcador d'incendiari que es transforma en un estel de foc després d'un curt interval de temps. Crema el terreny de la zona afectada.</description>
+            </ability>
+            <ability>
+                <name>Tropes Orb</name>
+                <description>Plaça una tableta orbital en un punt en el mapa, que dispara una salva de dardos mortals quan es torna a activar.</description>
+            </ability>
+            <ability>
+                <name>Calle de Llum</name>
+                <description>Llança una línia de llum que es transforma en un marcador orbital d'artilleria que provoca danys als agents al seu interior.</description>
+            </ability>
+        </abilities>
+        <bio>Brimstone és el líder de camp ideal, proporcionant suport tàctic i control de la zona de batalla.</bio>
+    </agent>
+    
+    <agent id="7">
+        <name>Phoenix</name>
+        <role>Duelista</role>
+        <abilities>
+            <ability>
+                <name>Runa Curativa</name>
+                <description>Llança una runa al terra que cura els agents dins de la seva àrea d'efecte.</description>
+            </ability>
+            <ability>
+                <name>Flash</name>
+                <description>Llança un flash que cega a tots els agents en la línia de visió del projectil.</description>
+            </ability>
+            <ability>
+                <name>Mur de Flames</name>
+                <description>Plaça un mur de flames que es pot curvar en direcció a la mira inicial de Phoenix. El mur bloqueja la visió i es pot passar per ell. Es pot recarregar múltiples vegades.</description>
+            </ability>
+            <ability>
+                <name>Emissió</name>
+                <description>Després d'un retard, reneix al teu punt de mort si mata a un enemic durant el seu temps d'activació. 2 usos per ronda.</description>
+            </ability>
+        </abilities>
+        <bio>Phoenix és un lluitador ardorós que pot controlar el foc i regenerar-se en la batalla.</bio>
+    </agent>
+    
+    <agent id="8">
+        <name>Viper</name>
+        <role>Controlador</role>
+        <abilities>
+            <ability>
+                <name>Cortina Tòxica</name>
+                <description>Llança un nuvolet de fum venenós a terra que dura un temps. Pot ser recarregat múltiples vegades.</description>
+            </ability>
+            <ability>
+                <name>Mur de Tòxica</name>
+                <description>Llança una línia de mur tòxic. Pot ser configurada en un angle antes de ser llençada. La línea dura fins a desactivar-se.</description>
+            </ability>
+            <ability>
+                <name>Gasejat</name>
+                <description>Llança una bombolla que esclata en gas tòxic.</description>
+            </ability>
+            <ability>
+                <name>Paranoia Empresonadora</name>
+                <description>Llança un esfera de paranoia que esclata en una parella d'ones de choque que deixen els agents que l'envolta al descobert i cegats.</description>
+            </ability>
+        </abilities>
+        <bio>Viper és una química astuta que utilitza gasos tòxics per controlar els espais i desorientar els enemics.</bio>
+    </agent>
+</agents>
