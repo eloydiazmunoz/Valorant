@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descripción de tu sitio web">
-    <title>Contacte</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8"> <!-- Codificació de caràcters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuració de la finestra gràfica per a dispositius mòbils -->
+    <meta name="description" content="Descripció del teu lloc web"> <!-- Descripció del lloc per a motors de cerca -->
+    <title>Contacte</title> <!-- Títol de la pàgina -->
+    <link rel="stylesheet" href="index.css"> <!-- Enllaç a full d'estils index.css -->
+    <link rel="stylesheet" href="contact.css"> <!-- Enllaç a full d'estils contact.css -->
 </head>
 <body>
     <header>
-        <img src="https://wallpapercave.com/wp/wp7282546.jpg" alt="Logotip de Valorant">
+        <img src="https://wallpapercave.com/wp/wp7282546.jpg" alt="Logotip de Valorant"> <!-- Imatge del logotip -->
         <nav>
             <ul>
-                <li><a href="index.html">Inici</a></li>
-                <li><a href="noticies.html">Notícies</a></li>
-                <li><a href="guies.html">Guies</a></li>
-                <li><a href="about.html">Sobre Nosaltres</a></li>
-                <li><a href="contact.html">Contacte</a></li>
-                <li><a href="fetch.html">Agents de Valorant</a></li>
+                <li><a href="index.html">Inici</a></li> <!-- Enllaç a la pàgina d'inici -->
+                <li><a href="noticies.html">Notícies</a></li> <!-- Enllaç a la pàgina de notícies -->
+                <li><a href="guies.html">Guies</a></li> <!-- Enllaç a la pàgina de guies -->
+                <li><a href="about.html">Sobre Nosaltres</a></li> <!-- Enllaç a la pàgina "Sobre Nosaltres" -->
+                <li><a href="contact.html">Contacte</a></li> <!-- Enllaç a la pàgina de contacte (actual) -->
+                <li><a href="fetch.html">Agents de Valorant</a></li> <!-- Enllaç a la pàgina d'agents de Valorant -->
             </ul>
         </nav>
     </header>
     <main>
         <section id="contact-form">
-            <h2>Contacte</h2>
-            <form action="enviar_correo.php" method="POST">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Correu electrònic:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Missatge:</label>
-                <textarea id="message" name="message" required></textarea>
-                <input type="submit" value="Submit">
+            <h2>Contacte</h2> <!-- Títol de la secció de contacte -->
+            <form action="https://formspree.io/f/xqkrnopj" method="POST"> <!-- Formulari de contacte amb mètode d'enviament POST -->
+                <label for="name">Nom:</label> <!-- Etiqueta per al camp de nom -->
+                <input type="text" id="name" name="name" required> <!-- Camp d'entrada per al nom -->
+                <label for="email">Correu electrònic:</label> <!-- Etiqueta per al camp de correu electrònic -->
+                <input type="email" id="email" name="email" required> <!-- Camp d'entrada per al correu electrònic -->
+                <label for="message">Missatge:</label> <!-- Etiqueta per al camp de missatge -->
+                <textarea id="message" name="message" required></textarea> <!-- Àrea de text per al missatge -->
+                <input type="submit" value="Enviar"> <!-- Botó d'enviament del formulari -->
             </form>
         </section>
     </main>
     <footer>
-        <p>© 2024 Web de Fans de Valorant</p>
+        <p>© 2024 Valorant. Tots els drets reservats.</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script src="scripts.js"></script> <!-- Enllaç a script extern per a funcionalitat addicional -->
 </body>
 </html>

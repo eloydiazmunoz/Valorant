@@ -147,15 +147,98 @@ button:hover {
 }
 
 footer {
+<<<<<<< HEAD
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
+=======
+    text-align: center; /* Centra el contenido del footer */
+>>>>>>> 3e212b71c20407fff9d948bd95977d2335403e8c
     padding: 20px 0;
-    background-color: #2b2d42;
+    background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
+<<<<<<< HEAD
     font-size: 0.9em;
     background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
     background-size: cover;
     flex-shrink: 0;
+=======
+    width: 100%;
+    border-top: 2px solid #ff4655;
+}
+
+footer p {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+>>>>>>> 3e212b71c20407fff9d948bd95977d2335403e8c
+}
+
+@media (max-width: 1024px) {
+    #hero h1 {
+        font-size: 3em; /* Reducir tamaño del texto en pantallas medianas */
+    }
+
+    nav ul li {
+        padding: 0 10px; /* Reducir el espaciado entre elementos del menú */
+    }
+
+    .news-item {
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Tamaño más pequeño para la navegación móvil */
+    }
+
+    main {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    #team img {
+        width: 80%; /* Imágenes más grandes para una mejor visibilidad en móviles */
+    }
+
+    #hero {
+        padding: 60px 20px; /* Reducir padding en móviles */
+        background-size: cover; /* Asegurar que la imagen de fondo se vea correctamente */
+    }
+
+    #hero h1 {
+        font-size: 2.5em; /* Reducir tamaño del título en móviles */
+    }
+
+    #latest-news {
+        grid-template-columns: 1fr; /* Mostrar artículos en una columna en móviles */
+    }
+
+    .news-item {
+        width: 90%;
+        margin-bottom: 20px; /* Separación extra entre artículos en móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li a {
+        font-size: 0.8rem; /* Tamaño aún más pequeño para navegación en pantallas muy pequeñas */
+    }
+
+    #hero h1 {
+        font-size: 2em; /* Reducir aún más el tamaño de la fuente */
+    }
+
+    button {
+        padding: 8px 15px; /* Botón más compacto para dispositivos móviles pequeños */
+    }
 }
