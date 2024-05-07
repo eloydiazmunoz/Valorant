@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0a0a0a; /* Dark background for better contrast */
-    color: #e0e0e0; /* Light grey text color for readability */
+    background-color: #0a0a0a;
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
@@ -56,75 +56,122 @@ nav ul li a.active {
 }
 
 main {
-    max-width: 800px; /* Slightly narrower main for better focus */
-    margin: 40px auto; /* More margin for distinct sectioning */
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
-    background-color: #1c1c1c; /* Darker background for main area */
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5); /* Stronger shadow for 3D depth */
-    border-radius: 10px; /* Rounded corners */
+    background-color: #1c1c1c;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border-radius: 10px;
 }
 
 main h1 {
-    color: #ff6347; /* Brighter red for headings */
-    margin-bottom: 20px; /* More space below heading */
+    color: #ff6347;
+    margin-bottom: 20px;
 }
 
 #team article {
-    margin-bottom: 30px; /* More space between articles */
-    padding: 15px; /* Padding inside articles */
-    border-left: 5px solid #ff6347; /* Accent border left */
+    margin-bottom: 30px;
+    padding: 15px;
+    border-left: 5px solid #ff6347;
 }
 
 #team article:hover {
-    background-color: #292929; /* Darker on hover for focus */
+    background-color: #292929;
 }
 
 #team h2 {
-    color: #ff6347; /* Consistent theme color for subheadings */
-    margin-bottom: 10px; /* Less gap under subheadings */
+    color: #ff6347;
+    margin-bottom: 10px;
 }
 
 #team p {
     text-align: justify;
-    margin-bottom: 20px; /* Space before next content */
+    margin-bottom: 20px;
 }
 
 #team img {
-    width: 50%; /* Smaller images */
+    width: 50%;
     height: auto;
     display: block;
-    margin: 10px auto; /* Center images */
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6); /* Subtle shadow for lift effect */
-    border-radius: 8px; /* Smoothed corners */
+    margin: 10px auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
 }
 
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #900; /* Footer background */
+    background-color: #900;
     color: #fff;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.9rem; /* Slightly smaller font in footer */
+    font-size: 0.9rem;
 }
 
+/* Media Queries for Responsive Design */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
+        padding: 10px 0;
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Smaller font size for mobile navigation */
+        font-size: 0.9rem;
+        margin-bottom: 10px;
     }
 
     main {
         margin: 20px;
+        padding: 15px;
+    }
+
+    #team img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header img {
+        width: 90px;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.8rem;
+    }
+
+    main {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    main h1 {
+        font-size: 1.5rem;
+    }
+
+    #team article {
         padding: 10px;
     }
 
     #team img {
-        width: 80%; /* Larger images on mobile for readability */
+        width: 90%;
+    }
+
+    footer {
+        padding: 5px;
+    }
+
+    footer p {
+        font-size: 0.8rem;
     }
 }

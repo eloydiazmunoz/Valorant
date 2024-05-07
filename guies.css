@@ -147,3 +147,41 @@ footer {
         height: 300px;
     }
 }
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        width: 90px; /* Reduce el logo en pantallas más pequeñas */
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reducir el tamaño del título aún más */
+    }
+
+    #guides {
+        padding: 0 10px;
+    }
+
+    article {
+        padding: 5px; /* Reducir padding en móviles pequeños */
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    footer {
+        padding: 10px 5px;
+    }
+}

@@ -156,3 +156,46 @@ footer p {
 .agent-select option {
     padding: 10px; /* Añade padding para hacer más clickeable */
 }
+/* CSS responsiu per a pantalles més petites */
+@media (max-width: 768px) {
+    /* Navegació en columna */
+    nav ul {
+        flex-direction: column;
+    }
+
+    /* Mida de font més petita per als enllaços de navegació en dispositius mòbils */
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Ajustar marges i padding per a la secció principal */
+    main {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    /* Fer que les imatges de l'equip siguin més grans en mòbils */
+    #team img {
+        width: 80%;
+    }
+
+    /* Ajustar la imatge d'agent dins de la secció d'informació */
+    #agent-info img {
+        width: 100%;
+        max-width: 200px; /* Limitar la mida màxima de la imatge */
+        height: auto;
+        display: block;
+        margin: 0 auto 10px auto; /* Centrem la imatge i afegim un marge inferior */
+    }
+
+    /* Eliminar padding i fer l'heroi més petit en mòbils */
+    #hero {
+        padding: 60px 20px;
+    }
+
+    /* Ajustar la mida de font del títol de l'heroi */
+    #hero h1 {
+        font-size: 2em;
+    }
+}
+

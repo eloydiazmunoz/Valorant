@@ -58,9 +58,35 @@
     background-color: #0056b3;
 }
 
+/* Media Queries for Responsive Form */
 @media (max-width: 768px) {
     #contact-form {
         width: 90%;
         margin-top: 20px;
+    }
+
+    #contact-form input[type="submit"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #contact-form input[type="text"],
+    #contact-form input[type="email"],
+    #contact-form textarea {
+        width: 95%;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    #contact-form input[type="submit"] {
+        width: 80%;
+        font-size: 14px;
+        padding: 8px;
     }
 }
