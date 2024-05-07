@@ -52,41 +52,43 @@ nav ul li a:hover, nav ul li a:focus {
 }
 
 main {
-    padding-top: 100px;
+    flex: 1 0 auto; /* Permite que el main ocupe el espacio sobrante */
+    max-width: 1200px;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #1c1c1c; /* Fondo oscuro para el contenido principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #hero {
-    background: url('https://wallpapercave.com/wp/wp7282546.jpg') center/cover no-repeat;
-    color: #fff;
-    padding: 200px 20px;
+    background-image: url('https://cdn.thespike.gg/Luke%2FVALORANT_chat_guide_1689263553427.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
+    padding: 120px 20px;
     position: relative;
+    color: #ffffff;
 }
 
-#hero:before {
+#hero::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5); /* Sombreado para mejorar legibilidad */
     z-index: -1;
 }
 
 #hero h1 {
     font-size: 4rem;
     font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Sombra para mejorar contraste */
 }
 
 #guides {
     margin: 20px auto;
     max-width: 1200px;
-}
-
-#guides h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    color: #ff6347;
-    margin-bottom: 30px;
 }
 
 article {
@@ -112,9 +114,9 @@ iframe {
 }
 
 footer {
-    text-align: center; /* Centra el contenido del footer */
+    text-align: center;
     padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
+    background-color: #0a0a4f;
     color: #fff;
     width: 100%;
     border-top: 2px solid #ff4655;
@@ -140,7 +142,7 @@ footer p {
     }
 
     #hero {
-        padding: 150px 10px;
+        padding: 100px 10px;
     }
 
     #hero h1 {
@@ -162,7 +164,7 @@ footer p {
     }
 
     header img {
-        width: 90px; /* Reduce el logo en pantallas más pequeñas */
+        width: 90px;
     }
 
     nav ul {
@@ -170,11 +172,15 @@ footer p {
     }
 
     nav ul li a {
-        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+        font-size: 0.9rem;
+    }
+
+    #hero {
+        padding: 50px 10px;
     }
 
     #hero h1 {
-        font-size: 2rem; /* Reducir el tamaño del título aún más */
+        font-size: 2rem;
     }
 
     #guides {
@@ -182,7 +188,7 @@ footer p {
     }
 
     article {
-        padding: 5px; /* Reducir padding en móviles pequeños */
+        padding: 5px;
     }
 
     iframe {
