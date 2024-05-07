@@ -112,12 +112,20 @@ iframe {
 }
 
 footer {
-    text-align: center;
-    padding: 20px 10px;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
-    position: relative;
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px 0;
+    background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
+    width: 100%;
+    border-top: 2px solid #ff4655;
+}
+
+footer p {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {

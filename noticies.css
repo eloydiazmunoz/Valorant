@@ -138,13 +138,12 @@ button:hover {
 }
 
 footer {
-    text-align: center;
+    text-align: center; /* Centra el contenido del footer */
     padding: 20px 0;
-    background-color: #2b2d42;
+    background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
-    font-size: 0.9em;
-    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
-    background-size: cover;
+    width: 100%;
+    border-top: 2px solid #ff4655;
 }
 
 footer p {

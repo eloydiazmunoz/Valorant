@@ -1,25 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-/* Reset */
+/* Reinici */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+html, body {
+    height: 100%; /* Asegura que la altura sea al menos la del viewport */
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Organiza el contenido de la página verticalmente */
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background: linear-gradient(145deg, #0b0b0b, #ff4655); /* Fondo negro y rojo */
+    color: #f5f5f5; /* Texto claro para contraste */
+    flex: 1; /* Permite que el body crezca para llenar el espacio */
 }
 
 header {
-    background: linear-gradient(145deg, #ff4655, #2b2d42);
+    background: #1c1c1c; /* Color de fondo oscuro */
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+    border-bottom: 2px solid #ff4655; /* Línea inferior roja */
 }
 
 header img {
@@ -47,24 +56,29 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #ffffff; /* Enlaces en blanco */
     font-size: 1.1em;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    color: #ffd700;
+    color: #ffd700; /* Color amarillo para hover */
 }
 
 main {
+    flex: 1 0 auto; /* Permite que el main ocupe el espacio sobrante */
     max-width: 1200px;
+    width: 100%; /* Ocupa todo el ancho disponible */
     margin: 20px auto;
     padding: 0 20px;
+    background-color: #1c1c1c; /* Fondo oscuro para el contenido principal */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 #hero {
-    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1422334832759c8a/6023a8315f9b2812764c34c4/VAL_State_of_Agents_Banner_v2.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -91,32 +105,58 @@ main {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-select {
-    padding: 10px;
+#agent-select {
+    padding: 8px;
     font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    border: 2px sòlid #ff4655; /* Bordes rojos */
+    border-radius: 8px;
+    appearance: none;
+    background-color: #333; /* Fondo oscuro para el selector */
+    color: #f5f5f5; /* Texto claro */
+    cursor: pointer;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 #agent-info {
-    background-color: #fff;
+    background-color: #333;
     padding: 20px;
+    margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    text-align: esquerra;
 }
 
-#agent-info:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+#agent-info img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+#agent-info p, #agent-info h1, #agent-info h2, #agent-info ul {
+    margin-bottom: 15px;
+    color: #f5f5f5; /* Texto claro */
+}
+
+#agent-info ul {
+    padding-left: 20px;
+}
+
+#agent-info li {
+    margin-bottom: 10px;
 }
 
 footer {
-    text-align: center;
+    text-align: center; /* Centra el contenido del footer */
     padding: 20px 0;
-    background-color: #333;
+    background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
+    width: 100%;
+    border-top: 2px solid #ff4655;
 }
 
 footer p {
@@ -126,76 +166,34 @@ footer p {
     padding: 5px 10px;
     border-radius: 5px;
 }
-.agent-select {
-    width: 100%; /* Ajusta al ancho del contenedor */
-    padding: 12px 16px;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif; /* Asegura consistencia tipográfica */
-    border: 2px solid #ccc; /* Borde más definido */
-    border-radius: 8px; /* Bordes redondeados */
-    appearance: none; /* Elimina el estilo por defecto en navegadores */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #fff;
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>');
-    background-repeat: no-repeat;
-    background-position: right 10px center;
-    cursor: pointer;
-}
 
-.agent-select:hover {
-    border-color: #888; /* Cambia el color del borde al pasar el mouse */
-}
-
-.agent-select:focus {
-    outline: none;
-    border-color: #ff4655; /* Cambia el color del borde al enfocar */
-    box-shadow: 0 0 0 3px rgba(255, 70, 85, 0.4); /* Sombra exterior para mejorar el foco */
-}
-
-.agent-select option {
-    padding: 10px; /* Añade padding para hacer más clickeable */
-}
-/* CSS responsiu per a pantalles més petites */
 @media (max-width: 768px) {
-    /* Navegació en columna */
     nav ul {
         flex-direction: column;
     }
 
-    /* Mida de font més petita per als enllaços de navegació en dispositius mòbils */
     nav ul li a {
         font-size: 0.9rem;
     }
 
-    /* Ajustar marges i padding per a la secció principal */
     main {
         margin: 20px;
         padding: 10px;
     }
 
-    /* Fer que les imatges de l'equip siguin més grans en mòbils */
-    #team img {
-        width: 80%;
-    }
-
-    /* Ajustar la imatge d'agent dins de la secció d'informació */
     #agent-info img {
         width: 100%;
-        max-width: 200px; /* Limitar la mida màxima de la imatge */
+        max-width: 200px;
         height: auto;
         display: block;
-        margin: 0 auto 10px auto; /* Centrem la imatge i afegim un marge inferior */
+        margin: 0 auto 10px auto;
     }
 
-    /* Eliminar padding i fer l'heroi més petit en mòbils */
     #hero {
         padding: 60px 20px;
     }
 
-    /* Ajustar la mida de font del títol de l'heroi */
     #hero h1 {
         font-size: 2em;
     }
 }
-
