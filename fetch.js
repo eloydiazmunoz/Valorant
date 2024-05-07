@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const xmlDoc = parser.parseFromString(data, 'text/xml');
             const agents = xmlDoc.querySelectorAll('agent');
 
-            // Añadir opciones al selector basadas en los agentes disponibles
+            // Afegir opcions al selector basades en els agents disponibles
             agents.forEach(agent => {
                 const name = agent.getElementsByTagName('name')[0].textContent;
                 const option = document.createElement('option');
@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 selectElement.appendChild(option);
             });
 
-            // Manejador de eventos cuando cambia la selección
+            // Gestor d'esdeveniments quan canvia la selecció
             selectElement.addEventListener('change', function() {
                 const agentId = this.value;
                 if (!agentId) return;
 
-                // Obtener los detalles del agente seleccionado
+                // Obtenir els detalls de l'agent seleccionat
                 const agent = xmlDoc.querySelector(`agent[id="${agentId}"]`);
                 const name = agent.getElementsByTagName('name')[0].textContent;
                 const role = agent.getElementsByTagName('role')[0].textContent;
@@ -30,22 +30,22 @@ document.addEventListener('DOMContentLoaded', function() {
                 const imageUrl = agent.getElementsByTagName('image')[0].textContent;
                 let abilities = '';
 
-                // Construir una lista de habilidades
+                // Construir una llista d'habilitats
                 agent.querySelectorAll('ability').forEach(ability => {
                     abilities += `<li>${ability.getElementsByTagName('name')[0].textContent}: ${ability.getElementsByTagName('description')[0].textContent}</li>`;
                 });
 
-                // Actualizar el contenido de la división de información con los detalles del agente
+                // Actualitzar el contingut de la divisió d'informació amb els detalls de l'agent
                 const infoDiv = document.getElementById('agent-info');
                 infoDiv.innerHTML = `
                     <h1>${name}</h1>
-                    <img src="${imageUrl}" alt="Image of ${name}" style="width: 700px; height: auto;">
-                    <p><strong>Role:</strong> ${role}</p>
-                    <p><strong>Biography:</strong> ${bio}</p>
-                    <h2>Abilities</h2>
+                    <img src="${imageUrl}" alt="Imatge de ${name}" style="width: 700px; height: auto;">
+                    <p><strong>Rol:</strong> ${role}</p>
+                    <p><strong>Biografia:</strong> ${bio}</p>
+                    <h2>Habilitats</h2>
                     <ul>${abilities}</ul>
                 `;
             });
         })
-        .catch(error => console.error('Error fetching XML:', error));
+        .catch(error => console.error('Error en la càrrega del XML:', error));
 });

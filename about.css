@@ -1,10 +1,11 @@
-/* Basic Reset */
+/* Reinici Bàsic */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estil general del cos */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #0a0a0a;
@@ -12,6 +13,7 @@ body {
     line-height: 1.6;
 }
 
+/* Estil de la capçalera */
 header {
     background: linear-gradient(145deg, #ff4655, #2b2d42);
     padding: 10px 5%;
@@ -21,6 +23,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estil de la imatge del logotip */
 header img {
     width: 120px;
     height: auto;
@@ -31,6 +34,7 @@ header img:hover {
     transform: scale(1.1);
 }
 
+/* Estil de la barra de navegació */
 nav ul {
     list-style: none;
     padding: 0;
@@ -55,6 +59,7 @@ nav ul li a.active {
     text-shadow: 0 0 5px #ffd700;
 }
 
+/* Estil del contingut principal */
 main {
     max-width: 800px;
     margin: 40px auto;
@@ -69,6 +74,7 @@ main h1 {
     margin-bottom: 20px;
 }
 
+/* Estil dels articles de l'equip */
 #team article {
     margin-bottom: 30px;
     padding: 15px;
@@ -104,10 +110,11 @@ main h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* Estil del peu de pàgina */
 footer {
-    text-align: center; /* Centra el contenido del footer */
+    text-align: center; /* Centra el contingut del peu de pàgina */
     padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
+    background-color: #0a0a4f; /* Blau fosc */
     color: #fff;
     width: 100%;
     border-top: 2px solid #ff4655;
@@ -121,7 +128,7 @@ footer p {
     border-radius: 5px;
 }
 
-/* Media Queries for Responsive Design */
+/* Consultes de mitjans per al disseny adaptable */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;

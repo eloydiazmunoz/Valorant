@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <agents>
+    <!-- Agent 1: Jett -->
     <agent id="1">
-        <name>Jett</name>
-        <role>Duelista</role>
-        <image>https://i.pinimg.com/originals/34/2c/4e/342c4e3f9b5ef584c59e1cd1e1500c43.jpg</image>
-        <abilities>
+        <name>Jett</name> <!-- Nom de l'Agent -->
+        <role>Duelista</role> <!-- Rol de l'Agent -->
+        <image>https://i.pinimg.com/originals/34/2c/4e/342c4e3f9b5ef584c59e1cd1e1500c43.jpg</image> <!-- Imatge de l'Agent -->
+        <abilities> <!-- Habilitats de l'Agent -->
             <ability>
-                <name>Núvol Ràpid</name>
-                <description>Llança un projectil que s'expandeix en una núvol que bloqueja la visió breument en impactar amb una superfície.</description>
+                <name>Núvol Ràpid</name> <!-- Nom de l'habilitat -->
+                <description>Llança un projectil que s'expandeix en una núvol que bloqueja la visió breument en impactar amb una superfície.</description> <!-- Descripció de l'habilitat -->
             </ability>
             <ability>
                 <name>Ascens</name>
@@ -22,8 +23,10 @@
                 <description>Equipat amb un conjunt de ganivets llançadors molt precisos que es recarreguen en matar un oponent.</description>
             </ability>
         </abilities>
-        <bio>Jett té un estil de lluita àgil i acrobàtic que li permet prendre riscos que ningú més pot.</bio>
+        <bio>Jett té un estil de lluita àgil i acrobàtic que li permet prendre riscos que ningú més pot.</bio> <!-- Biografia de l'Agent -->
     </agent>
+    
+    <!-- Agent 2: Omen -->
     <agent id="2">
         <name>Omen</name>
         <role>Controlador</role>
@@ -48,6 +51,8 @@
         </abilities>
         <bio>Omen és un fantasma d'un record, utilitzant el engany i la confusió per controlar el camp de batalla.</bio>
     </agent>
+    
+    <!-- Agent 3: Cypher -->
     <agent id="3">
         <name>Cypher</name>
         <role>Sentinella</role>
@@ -72,6 +77,8 @@
         </abilities>
         <bio>Cypher és un mestre en la recollida d'informació i control del terreny, mitjançant trampes i vigilància.</bio>
     </agent>
+    
+    <!-- Agent 4: Breach -->
     <agent id="4">
         <name>Breach</name>
         <role>Iniciador</role>
@@ -96,6 +103,8 @@
         </abilities>
         <bio>Breach és un guerrer dur i sense compromisos que trencarà qualsevol línia per obrir el camí.</bio>
     </agent>
+    
+    <!-- Agent 5: Sage -->
     <agent id="5">
         <name>Sage</name>
         <role>Sanadora</role>
@@ -120,6 +129,8 @@
         </abilities>
         <bio>Sage és una companya de team fiable, capaç de curar ferides i ressuscitar aliats.</bio>
     </agent>
+    
+    <!-- Agent 6: Brimstone -->
     <agent id="6">
         <name>Brimstone</name>
         <role>Controlador</role>
@@ -144,6 +155,8 @@
         </abilities>
         <bio>Brimstone és el líder de camp ideal, proporcionant suport tàctic i control de la zona de batalla.</bio>
     </agent>
+    
+    <!-- Agent 7: Phoenix -->
     <agent id="7">
         <name>Phoenix</name>
         <role>Duelista</role>
@@ -168,6 +181,8 @@
         </abilities>
         <bio>Phoenix és un lluitador ardorós que pot controlar el foc i regenerar-se en la batalla.</bio>
     </agent>
+    
+    <!-- Agent 8: Viper -->
     <agent id="8">
         <name>Viper</name>
         <role>Controlador</role>

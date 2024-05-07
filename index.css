@@ -1,74 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Estil per al cos de la pàgina */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #0a0a0a;
-    color: #fff;
+    font-family: 'Roboto', sans-serif; /* Utilitza la font Roboto com a font principal */
+    background-color: #0a0a0a; /* Color de fons negre */
+    color: #fff; /* Color del text blanc */
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow-x: hidden; /* Evita la barra de desplaçament horitzontal */
 }
 
+/* Estil per a la capçalera */
 header {
-    background: linear-gradient(145deg, #ff4655, #2b2d42);
-    padding: 10px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ff4655, #2b2d42); /* Fons degradat per a la capçalera */
+    padding: 10px 5%; /* Padding a la capçalera */
+    display: flex; /* Flexbox per al contingut de la capçalera */
+    justify-content: space-between; /* Ajusta el contingut al costat */
+    align-items: center; /* Centra verticalment el contingut */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suau */
 }
 
+/* Estil per a la imatge de la capçalera */
 header img {
-    width: 120px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+    width: 120px; /* Amplada fixa de la imatge */
+    height: auto; /* Alçada automàtica per mantenir la proporció */
+    transition: transform 0.3s ease-in-out; /* Transició suau de l'efecte de transformació */
 }
 
+/* Efecte d'ampliació de la imatge en passar el ratolí per damunt */
 header img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Amplia la imatge al 110% */
 }
 
+/* Estil per a la navegació */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+    list-style: none; /* Treu els punts de la llista */
+    padding: 0; /* Elimina el padding */
+    display: flex; /* Utilitza flexbox per a la navegació */
 }
 
+/* Estil per als elements de la llista de navegació */
 nav ul li {
-    padding: 0 20px;
+    padding: 0 20px; /* Espaiat entre els elements de la llista */
 }
 
+/* Estil per als enllaços de la navegació */
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Elimina el subratllat dels enllaços */
+    color: #ffffff; /* Color del text blanc */
+    font-size: 1.1em; /* Mida de la font */
+    font-weight: bold; /* Text en negreta */
+    transition: color 0.3s ease; /* Transició suau del color del text */
 }
 
+/* Efecte de canvi de color en passar el ratolí per damunt */
 nav ul li a:hover, nav ul li a:focus {
-    color: #ffd700;
-    text-shadow: 0 0 5px #ffd700;
+    color: #ffd700; /* Canvia el color del text al groc */
+    text-shadow: 0 0 5px #ffd700; /* Ombra al text per millorar la visibilitat */
 }
 
+/* Estil per al contingut principal */
 main {
-    max-width: 100%;
-    margin: 20px 10%;
-    padding: 0 20px;
-    flex: 1;
+    max-width: 100%; /* Amplada màxima del contingut */
+    margin: 20px 10%; /* Marge superior i inferior del contingut */
+    padding: 0 20px; /* Padding horitzontal del contingut */
+    flex: 1; /* Flexbox perquè el contingut ocupi l'espai disponible */
 }
 
+/* Estil per a la secció hero */
 #hero {
-    background-image: url('https://esports.as.com/2022/11/10/valorant/Cypher-protagonista-parche_1627947209_1073887_1440x600.png');
-    background-size: 100% auto;
-    background-position: center;
-    text-align: center;
-    padding: 120px 20px;
-    position: relative;
-    color: #ffffff;
-    margin-top: 20px;
+    background-image: url('https://esports.as.com/2022/11/10/valorant/Cypher-protagonista-parche_1627947209_1073887_1440x600.png'); /* Imatge de fons */
+    background-size: 100% auto; /* Tamany de la imatge */
+    background-position: center; /* Posició del fons */
+    text-align: center; /* Alineació del text al centre */
+    padding: 120px 20px; /* Padding de la secció hero */
+    position: relative; /* Posició relativa per a l'element */
+    color: #ffffff; /* Color del text blanc */
+    margin-top: 20px; /* Espaiat superior */
 }
 
+/* Capa d'ombra per millorar la llegibilitat del text */
 #hero::before {
     content: '';
     position: absolute;
@@ -76,110 +87,124 @@ main {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* Fons semi-transparent */
     z-index: -1;
 }
 
+/* Estil per al títol de la secció hero */
 #hero h1 {
-    font-size: 4em;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-size: 4em; /* Mida del títol */
+    font-weight: 700; /* Text en negreta */
+    margin: 0; /* Elimina els marges */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Ombra al text per millorar la visibilitat */
 }
 
+/* Estil per a les últimes notícies */
 #latest-news {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    display: grid; /* Utilitza grid per a la disposició dels elements */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Distribució flexible dels elements */
+    gap: 20px; /* Espaiat entre elements */
+    margin-top: 20px; /* Espaiat superior */
 }
 
+/* Estil per als enllaços de les notícies */
 .news-link {
-    text-decoration: none; /* Remueve subrayado */
-    color: inherit;
+    text-decoration: none; /* Elimina el subratllat dels enllaços */
+    color: inherit; /* Utilitza el color de text per defecte */
 }
 
+/* Estil per als elements de notícia */
 .news-item {
-    background-color: #222222;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-    overflow: hidden;
-    height: auto; /* Auto para que se ajuste al contenido */
+    background-color: #222222; /* Fons de les notícies */
+    padding: 20px; /* Padding dels elements de notícia */
+    border-radius: 8px; /* Ràdio de les cantonades */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Sombra suau */
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transició suau */
+    overflow: hidden; /* Oculta el contingut que supera el límit */
+    height: auto; /* Alçada automàtica */
 }
 
+/* Efecte de desplaçament cap amunt en passar el ratolí per damunt */
 .news-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+    transform: translateY(-10px); /* Desplaçament cap amunt */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7); /* Sombra més pronunciada */
 }
 
+/* Estil per a les imatges de les notícies */
 .news-item img {
-    width: 100%;
-    height: 200px; /* Establecer una altura fija */
-    object-fit: cover; 
-    border-radius: 8px 8px 0 0;
-    transition: transform 0.3s ease-in-out;
+    width: 100%; /* Amplada de la imatge al 100% */
+    height: 200px; /* Alçada de la imatge */
+    object-fit: cover; /* Ajusta la imatge per cobrir el contenidor */
+    border-radius: 8px 8px 0 0; /* Ràdio de les cantonades superiors */
+    transition: transform 0.3s ease-in-out; /* Transició suau */
 }
 
+/* Efecte de zoom en passar el ratolí per damunt de la imatge */
 .news-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Zoom de la imatge al 105% */
 }
 
+/* Estil per als botons de les notícies */
 button {
-    background-color: #ff4655;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    width: calc(100% - 40px); /* Ajustar el ancho */
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
+    background-color: #ff4655; /* Color de fons del botó */
+    color: white; /* Color del text del botó */
+    border: none; /* Sense vora */
+    padding: 10px 20px; /* Padding del botó */
+    cursor: pointer; /* Cursor apuntador */
+    border-radius: 5px; /* Ràdio de les cantonades */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Sombra suau */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transició suau */
+    width: calc(100% - 40px); /* Amplada del botó */
+    position: absolute; /* Posició absoluta */
+    bottom: 20px; /* Espaiat inferior */
+    left: 20px; /* Espaiat lateral */
 }
 
+/* Efecte de canvi de color i ombra en passar el ratolí per damunt */
 button:hover {
-    background-color: #ff2e3f;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: #ff2e3f; /* Canvi de color de fons */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ombra més pronunciada */
 }
 
+/* Estil per al peu de pàgina */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    text-align: center; /* Centra el contenido del footer */
-    padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
-    color: #fff;
-    font-size: 0.9em;
-    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
-    background-size: cover;
-    flex-shrink: 0;
-    width: 100%;
-    border-top: 2px solid #ff4655;
+    position: fixed; /* Fixa el peu de pàgina */
+    bottom: 0; /* Alinea el peu de pàgina a la part inferior */
+    width: 100%; /* Amplada total */
+    text-align: center; /* Alineació del text al centre */
+    padding: 20px 0; /* Padding del peu de pàgina */
+    background-color: #0a0a4f; /* Color de fons blau fosc */
+    color: #fff; /* Color del text blanc */
+    font-size: 0.9em; /* Mida de la font */
+    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg'); /* Imatge de fons */
+    background-size: cover; /* Tamany de la imatge */
+    flex-shrink: 0; /* Evita la reducció del peu de pàgina */
+    width: 100%; /* Amplada total */
+    border-top: 2px solid #ff4655; /* Línia superior amb color de ressalt */
 }
 
+/* Estil per als elements de text del peu de pàgina */
 footer p {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    margin: 0; /* Elimina els marges */
+    background: rgba(0, 0, 0, 0.5); /* Fons semi-transparent */
+    display: inline-block; /* Mostra com a bloc en línia */
+    padding: 5px 10px; /* Padding del text */
+    border-radius: 5px; /* Ràdio de les cantonades */
 }
 
+/* Estil per a les respostes a diferents dimensions de pantalla */
 @media (max-width: 1024px) {
+    /* Ajusta la mida del títol de la secció hero en pantalles mitjanes */
     #hero h1 {
-        font-size: 3em; /* Reducir tamaño del texto en pantallas medianas */
+        font-size: 3em;
     }
 
+    /* Redueix l'espai entre elements del menú en pantalles mitjanes */
     nav ul li {
-        padding: 0 10px; /* Reducir el espaciado entre elementos del menú */
+        padding: 0 10px;
     }
 
+    /* Ajusta el padding dels elements de notícia en pantalles mitjanes */
     .news-item {
         padding: 15px;
         border-radius: 8px;
@@ -187,52 +212,63 @@ footer p {
 }
 
 @media (max-width: 768px) {
+    /* Ajusta la disposició del menú en pantalles petites */
     nav ul {
         flex-direction: column;
     }
 
+    /* Redueix la mida del text del menú en pantalles petites */
     nav ul li a {
-        font-size: 0.9rem; /* Tamaño más pequeño para la navegación móvil */
+        font-size: 0.9rem;
     }
 
+    /* Ajusta el marge i el padding del contingut principal en pantalles petites */
     main {
         margin: 20px;
         padding: 10px;
     }
 
+    /* Ajusta la mida de les imatges del peu de pàgina en pantalles petites */
     #team img {
-        width: 80%; /* Imágenes más grandes para una mejor visibilidad en móviles */
+        width: 80%;
     }
 
+    /* Ajusta el padding de la secció hero en pantalles petites */
     #hero {
-        padding: 60px 20px; /* Reducir padding en móviles */
-        background-size: cover; /* Asegurar que la imagen de fondo se vea correctamente */
+        padding: 60px 20px;
+        background-size: cover;
     }
 
+    /* Ajusta la mida del títol de la secció hero en pantalles petites */
     #hero h1 {
-        font-size: 2.5em; /* Reducir tamaño del título en móviles */
+        font-size: 2.5em;
     }
 
+    /* Mostra els articles en una columna en pantalles petites */
     #latest-news {
-        grid-template-columns: 1fr; /* Mostrar artículos en una columna en móviles */
+        grid-template-columns: 1fr;
     }
 
+    /* Ajusta l'amplada dels elements de notícia en pantalles petites */
     .news-item {
         width: 90%;
-        margin-bottom: 20px; /* Separación extra entre artículos en móviles */
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 480px) {
+    /* Redueix encara més la mida del text del menú en pantalles molt petites */
     nav ul li a {
-        font-size: 0.8rem; /* Tamaño aún más pequeño para navegación en pantallas muy pequeñas */
+        font-size: 0.8rem;
     }
 
+    /* Redueix encara més la mida del títol de la secció hero en pantalles molt petites */
     #hero h1 {
-        font-size: 2em; /* Reducir aún más el tamaño de la fuente */
+        font-size: 2em;
     }
 
+    /* Ajusta el padding dels botons en pantalles molt petites */
     button {
-        padding: 8px 15px; /* Botón más compacto para dispositivos móviles pequeños */
+        padding: 8px 15px;
     }
 }

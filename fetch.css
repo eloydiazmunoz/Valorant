@@ -8,27 +8,27 @@
 }
 
 html, body {
-    height: 100%; /* Asegura que la altura sea al menos la del viewport */
+    height: 100%; /* Asseguro que l'alçada sigui com a mínim la del viewport */
     margin: 0;
     display: flex;
-    flex-direction: column; /* Organiza el contenido de la página verticalmente */
+    flex-direction: column; /* Organitza el contingut de la pàgina verticalment */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(145deg, #0b0b0b, #ff4655); /* Fondo negro y rojo */
-    color: #f5f5f5; /* Texto claro para contraste */
-    flex: 1; /* Permite que el body crezca para llenar el espacio */
+    background: linear-gradient(145deg, #0b0b0b, #ff4655); /* Fons negre i vermell */
+    color: #f5f5f5; /* Text clar per contrast */
+    flex: 1; /* Permet que el body creixi per omplir l'espai */
 }
 
 header {
-    background: #1c1c1c; /* Color de fondo oscuro */
+    background: #1c1c1c; /* Color de fons fosc */
     padding: 20px 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
-    border-bottom: 2px solid #ff4655; /* Línea inferior roja */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Ombra més fosca */
+    border-bottom: 2px solid #ff4655; /* Línia inferior vermella */
 }
 
 header img {
@@ -56,23 +56,23 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: #ffffff; /* Enlaces en blanco */
+    color: #ffffff; /* Enllaços en blanc */
     font-size: 1.1em;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover, nav ul li a:focus {
-    color: #ffd700; /* Color amarillo para hover */
+    color: #ffd700; /* Color groc per hover */
 }
 
 main {
-    flex: 1 0 auto; /* Permite que el main ocupe el espacio sobrante */
+    flex: 1 0 auto; /* Permet que el main ocupi l'espai restant */
     max-width: 1200px;
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%; /* Ocupa tot l'ample disponible */
     margin: 20px auto;
     padding: 0 20px;
-    background-color: #1c1c1c; /* Fondo oscuro para el contenido principal */
+    background-color: #1c1c1c; /* Fons fosc per al contingut principal */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
@@ -109,11 +109,11 @@ main {
     padding: 8px;
     font-size: 1em;
     font-family: 'Roboto', sans-serif;
-    border: 2px sòlid #ff4655; /* Bordes rojos */
+    border: 2px solid #ff4655; /* Vores vermelles */
     border-radius: 8px;
     appearance: none;
-    background-color: #333; /* Fondo oscuro para el selector */
-    color: #f5f5f5; /* Texto claro */
+    background-color: #333; /* Fons fosc pel selector */
+    color: #f5f5f5; /* Text clar */
     cursor: pointer;
     margin-bottom: 20px;
     margin-top: 10px;
@@ -124,9 +124,9 @@ main {
     padding: 20px;
     margin-top: 20px;
     border-radius: 10px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Sombra más oscura */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Ombra més fosca */
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-    text-align: esquerra;
+    text-align: left;
 }
 
 #agent-info img {
@@ -139,7 +139,7 @@ main {
 
 #agent-info p, #agent-info h1, #agent-info h2, #agent-info ul {
     margin-bottom: 15px;
-    color: #f5f5f5; /* Texto claro */
+    color: #f5f5f5; /* Text clar */
 }
 
 #agent-info ul {
@@ -151,9 +151,9 @@ main {
 }
 
 footer {
-    text-align: center; /* Centra el contenido del footer */
+    text-align: center; /* Centra el contingut del peu de pàgina */
     padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
+    background-color: #0a0a4f; /* Blau fosc */
     color: #fff;
     width: 100%;
     border-top: 2px solid #ff4655;

@@ -1,4 +1,4 @@
-/* Asegura que el cos ocupi tota l'alçada */
+/* Aseguro que el cos ocupi tota l'alçada de la finestra */
 html, body {
     height: 100%;
     margin: 0;
@@ -75,7 +75,7 @@ main {
     background-color: #0056b3;
 }
 
-/* Estils del footer */
+/* Estils del peu de pàgina */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -94,7 +94,7 @@ footer p {
     border-radius: 5px;
 }
 
-/* Media Queries per a formularis responsius */
+/* Consultes de mitjans per a formularis responsius */
 @media (max-width: 768px) {
     #contact-form {
         width: 90%;

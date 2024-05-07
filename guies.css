@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Estils globals */
 body {
+    /* Utilitzo la font Roboto com a tipografia principal */
     font-family: 'Roboto', sans-serif;
+    /* Estils per al cos de la pàgina */
     background-color: #0a0a0a;
     color: #fff;
     margin: 0;
@@ -9,7 +12,9 @@ body {
     overflow-x: hidden;
 }
 
+/* Estils per a la capçalera */
 header {
+    /* Degradat de fons per a la capçalera */
     background: linear-gradient(145deg, #ff4655, #2b2d42);
     padding: 10px 5%;
     display: flex;
@@ -18,6 +23,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Estils per a la imatge del logotip */
 header img {
     width: 120px;
     height: auto;
@@ -28,6 +34,7 @@ header img:hover {
     transform: scale(1.1);
 }
 
+/* Estils per a la barra de navegació */
 nav ul {
     list-style: none;
     padding: 0;
@@ -51,18 +58,23 @@ nav ul li a:hover, nav ul li a:focus {
     text-shadow: 0 0 5px #ffd700;
 }
 
+/* Estils per al cos principal */
 main {
-    flex: 1 0 auto; /* Permite que el main ocupe el espacio sobrante */
+    /* El main ocupa el espai sobrant */
+    flex: 1 0 auto;
     max-width: 1200px;
-    width: 100%; /* Ocupa todo el ancho disponible */
+    width: 100%;
     margin: 20px auto;
     padding: 0 20px;
-    background-color: #1c1c1c; /* Fondo oscuro para el contenido principal */
+    /* Fons fosc per al contingut principal */
+    background-color: #1c1c1c;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
+/* Estils per a la secció hero */
 #hero {
+    /* Imatge de fons */
     background-image: url('https://cdn.thespike.gg/Luke%2FVALORANT_chat_guide_1689263553427.jpg');
     background-size: cover;
     background-position: center;
@@ -72,30 +84,36 @@ main {
     color: #ffffff;
 }
 
+/* Sombreado per millorar la legibilitat del text */
 #hero::before {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Sombreado para mejorar legibilidad */
+    background: rgba(0, 0, 0, 0.5);
     z-index: -1;
 }
 
 #hero h1 {
     font-size: 4rem;
     font-weight: bold;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6); /* Sombra para mejorar contraste */
+    /* Sombra per millorar el contrast del text */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
 
+/* Estils per a la secció de guies */
 #guides {
     margin: 20px auto;
     max-width: 1200px;
 }
 
+/* Estils per als articles */
 article {
+    /* Fons semitransparent */
     background: rgba(255, 255, 255, 0.1);
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 10px;
+    /* Filtratge per desenfocar el fons */
     backdrop-filter: blur(10px);
 }
 
@@ -113,6 +131,7 @@ iframe {
     margin-top: 20px;
 }
 
+/* Estils per al peu de pàgina */
 footer {
     text-align: center;
     padding: 20px 0;
@@ -124,14 +143,17 @@ footer {
 
 footer p {
     margin: 0;
+    /* Fons semitransparent */
     background: rgba(0, 0, 0, 0.5);
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
+/* Media queries per a dispositius mòbils */
 @media (max-width: 768px) {
     nav ul {
+        /* Canvi a disposició de columnes per a la navegació */
         flex-direction: column;
         padding: 10px 0;
     }
@@ -158,8 +180,10 @@ footer p {
     }
 }
 
+/* Media queries per a dispositius molt petits */
 @media (max-width: 480px) {
     header {
+        /* Canvi a disposició de columnes per a la capçalera */
         flex-direction: column;
     }
 

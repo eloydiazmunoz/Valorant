@@ -1,5 +1,7 @@
+/* Import de la font Roboto des de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Estils globals per al cos del document */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #0a0a0a;
@@ -9,9 +11,10 @@ body {
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Mínimo de alto de la ventana */
+    min-height: 100vh; /* Alçada mínima de la finestra */
 }
 
+/* Estils per a la capçalera */
 header {
     background: linear-gradient(145deg, #ff4655, #2b2d42);
     padding: 10px 5%;
@@ -23,6 +26,7 @@ header {
     background-position: center;
 }
 
+/* Estils per a la imatge del logotip */
 header img {
     width: 120px;
     height: auto;
@@ -33,6 +37,7 @@ header img:hover {
     transform: scale(1.1);
 }
 
+/* Estils per a la navegació */
 nav ul {
     list-style: none;
     padding: 0;
@@ -56,6 +61,7 @@ nav ul li a:hover, nav ul li a:focus {
     text-shadow: 0 0 5px #ffd700;
 }
 
+/* Estils per al contingut principal */
 main {
     max-width: 100%;
     margin: 20px auto;
@@ -63,6 +69,7 @@ main {
     flex: 1;
 }
 
+/* Estils per a la secció hero */
 #hero {
     background-image: url('https://w.wallha.com/ws/8/pFLjC5Zf.png');
     background-size: 100% auto;
@@ -91,6 +98,7 @@ main {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Estils per a la secció de les últimes notícies */
 #latest-news {
     display: flex;
     justify-content: center;
@@ -99,6 +107,7 @@ main {
     margin-top: 20px;
 }
 
+/* Estils per a les caixes de notícies */
 .news-item {
     width: 300px;
     background-color: #222222;
@@ -109,6 +118,7 @@ main {
     overflow: hidden;
 }
 
+/* Estils per a les imatges de les notícies */
 .news-item img {
     width: 100%;
     height: 200px; 
@@ -117,15 +127,18 @@ main {
     transition: transform 0.3s ease-in-out;
 }
 
+/* Efecte de ressaltat quan es passa el ratolí sobre una notícia */
 .news-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
 }
 
+/* Efecte de zoom a la imatge quan es passa el ratolí sobre una notícia */
 .news-item:hover img {
     transform: scale(1.05);
 }
 
+/* Estils per als botons de les notícies */
 button {
     background-color: #ff4655;
     color: white;
@@ -142,10 +155,11 @@ button:hover {
     background-color: #ff2e3f;
 }
 
+/* Estils per al peu de pàgina */
 footer {
-    text-align: center; /* Centra el contenido del footer */
+    text-align: center; /* Centra el contingut del peu de pàgina */
     padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
+    background-color: #0a0a4f; /* Blau fosc */
     color: #fff;
     font-size: 0.9em;
     background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
@@ -163,6 +177,7 @@ footer p {
     border-radius: 5px;
 }
 
+/* Estils per a pantalles mitjanes (tabletes) */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -196,6 +211,7 @@ footer p {
     }
 }
 
+/* Estils per a pantalles petites (mòbils) */
 @media (max-width: 480px) {
     nav ul li a {
         font-size: 0.8rem; /* Reduir la mida de la font encara més per a pantalles petites */
