@@ -112,12 +112,20 @@ iframe {
 }
 
 footer {
-    text-align: center;
-    padding: 20px 10px;
-    background: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(5px);
-    position: relative;
+    text-align: center; /* Centra el contenido del footer */
+    padding: 20px 0;
+    background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
+    width: 100%;
+    border-top: 2px solid #ff4655;
+}
+
+footer p {
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -145,5 +153,43 @@ footer {
 
     iframe {
         height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+    }
+
+    header img {
+        width: 90px; /* Reduce el logo en pantallas más pequeñas */
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    }
+
+    #hero h1 {
+        font-size: 2rem; /* Reducir el tamaño del título aún más */
+    }
+
+    #guides {
+        padding: 0 10px;
+    }
+
+    article {
+        padding: 5px; /* Reducir padding en móviles pequeños */
+    }
+
+    iframe {
+        height: 250px;
+    }
+
+    footer {
+        padding: 10px 5px;
     }
 }

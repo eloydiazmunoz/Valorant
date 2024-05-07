@@ -3,6 +3,7 @@
     <agent id="1">
         <name>Jett</name>
         <role>Duelista</role>
+        <image>https://i.pinimg.com/originals/34/2c/4e/342c4e3f9b5ef584c59e1cd1e1500c43.jpg</image>
         <abilities>
             <ability>
                 <name>Núvol Ràpid</name>
@@ -26,6 +27,7 @@
     <agent id="2">
         <name>Omen</name>
         <role>Controlador</role>
+        <image>https://images6.alphacoders.com/130/1305039.jpeg</image>
         <abilities>
             <ability>
                 <name>Pas Amagat</name>
@@ -49,6 +51,7 @@
     <agent id="3">
         <name>Cypher</name>
         <role>Sentinella</role>
+        <image>https://images4.alphacoders.com/135/1354617.jpeg</image>
         <abilities>
             <ability>
                 <name>Emboscada Cibernetica</name>
@@ -56,7 +59,7 @@
             </ability>
             <ability>
                 <name>Camera Espia</name>
-                <description>Col·loca una càmera espia controlable. En posar-la, podràs veure l'angle de visió de la càmera. Activa-la per prendre el control de la càmera. Reutilitza la càmera quan estigui inactiu per recollir-la i posar-la en un altre lloc.</description>
+                <description>Col·loca una càmera espia controlable. En posar-la, podràs veure l'angle de visió de la càmera.</description>
             </ability>
             <ability>
                 <name>Caiac Neural</name>
@@ -68,13 +71,15 @@
             </ability>
         </abilities>
         <bio>Cypher és un mestre en la recollida d'informació i control del terreny, mitjançant trampes i vigilància.</bio>
-    </agent> <agent id="4">
+    </agent>
+    <agent id="4">
         <name>Breach</name>
         <role>Iniciador</role>
+        <image>https://images3.alphacoders.com/114/1149735.jpg</image>
         <abilities>
             <ability>
                 <name>Fissura</name>
-                <description>Llança un carregador que atravesa els murs. Impacta els agents del costat de la pared.</description>
+                <description>Llança un carregador que atravessa els murs. Impacta els agents del costat de la pared.</description>
             </ability>
             <ability>
                 <name>Terremot</name>
@@ -91,10 +96,10 @@
         </abilities>
         <bio>Breach és un guerrer dur i sense compromisos que trencarà qualsevol línia per obrir el camí.</bio>
     </agent>
-    
     <agent id="5">
         <name>Sage</name>
         <role>Sanadora</role>
+        <image>https://images.alphacoders.com/134/1349791.jpeg</image>
         <abilities>
             <ability>
                 <name>Orbe Curatiu</name>
@@ -115,10 +120,10 @@
         </abilities>
         <bio>Sage és una companya de team fiable, capaç de curar ferides i ressuscitar aliats.</bio>
     </agent>
-    
     <agent id="6">
         <name>Brimstone</name>
         <role>Controlador</role>
+        <image>https://images.alphacoders.com/134/1347674.jpeg</image>
         <abilities>
             <ability>
                 <name>Crit Granata</name>
@@ -126,7 +131,7 @@
             </ability>
             <ability>
                 <name>Incendiari</name>
-                <description>Llança un marcador d'incendiari que es transforma en un estel de foc després d'un curt interval de temps. Crema el terreny de la zona afectada.</description>
+                <description>Llança un marcador d'incendiari que es transforma en un estel de foc després d'un curt interval de temps.</description>
             </ability>
             <ability>
                 <name>Tropes Orb</name>
@@ -134,15 +139,15 @@
             </ability>
             <ability>
                 <name>Calle de Llum</name>
-                <description>Llança una línia de llum que es transforma en un marcador orbital d'artilleria que provoca danys als agents al seu interior.</description>
+                <description>Llança una línia de llum que es transforma en un marcador orbital d'artilleria.</description>
             </ability>
         </abilities>
         <bio>Brimstone és el líder de camp ideal, proporcionant suport tàctic i control de la zona de batalla.</bio>
     </agent>
-    
     <agent id="7">
         <name>Phoenix</name>
         <role>Duelista</role>
+        <image>https://i.redd.it/vsbruxmnm8s41.jpg</image>
         <abilities>
             <ability>
                 <name>Runa Curativa</name>
@@ -154,19 +159,19 @@
             </ability>
             <ability>
                 <name>Mur de Flames</name>
-                <description>Plaça un mur de flames que es pot curvar en direcció a la mira inicial de Phoenix. El mur bloqueja la visió i es pot passar per ell. Es pot recarregar múltiples vegades.</description>
+                <description>Plaça un mur de flames que es pot curvar en direcció a la mira inicial de Phoenix.</description>
             </ability>
             <ability>
                 <name>Emissió</name>
-                <description>Després d'un retard, reneix al teu punt de mort si mata a un enemic durant el seu temps d'activació. 2 usos per ronda.</description>
+                <description>Després d'un retard, reneix al teu punt de mort si mata a un enemic.</description>
             </ability>
         </abilities>
         <bio>Phoenix és un lluitador ardorós que pot controlar el foc i regenerar-se en la batalla.</bio>
     </agent>
-    
     <agent id="8">
         <name>Viper</name>
         <role>Controlador</role>
+        <image>https://images7.alphacoders.com/123/1233940.jpg</image>
         <abilities>
             <ability>
                 <name>Cortina Tòxica</name>
@@ -174,7 +179,7 @@
             </ability>
             <ability>
                 <name>Mur de Tòxica</name>
-                <description>Llança una línia de mur tòxic. Pot ser configurada en un angle antes de ser llençada. La línea dura fins a desactivar-se.</description>
+                <description>Llança una línia de mur tòxic. Pot ser configurada en un angle antes de ser llençada.</description>
             </ability>
             <ability>
                 <name>Gasejat</name>
