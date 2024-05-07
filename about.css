@@ -89,13 +89,19 @@ main h1 {
     margin-bottom: 20px;
 }
 
-#team img {
+#team a img {
     width: 50%;
     height: auto;
     display: block;
     margin: 10px auto;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
     border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#team a:hover img {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 footer {
@@ -132,7 +138,7 @@ footer p {
         padding: 15px;
     }
 
-    #team img {
+    #team a img {
         width: 80%;
     }
 }
@@ -168,7 +174,7 @@ footer p {
         padding: 10px;
     }
 
-    #team img {
+    #team a img {
         width: 90%;
     }
 
