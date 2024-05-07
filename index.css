@@ -147,23 +147,18 @@ button:hover {
 }
 
 footer {
-<<<<<<< HEAD
     position: fixed;
     bottom: 0;
     width: 100%;
     text-align: center;
-=======
     text-align: center; /* Centra el contenido del footer */
->>>>>>> 3e212b71c20407fff9d948bd95977d2335403e8c
     padding: 20px 0;
     background-color: #0a0a4f; /* Azul oscuro */
     color: #fff;
-<<<<<<< HEAD
     font-size: 0.9em;
     background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
     background-size: cover;
     flex-shrink: 0;
-=======
     width: 100%;
     border-top: 2px solid #ff4655;
 }
@@ -174,7 +169,6 @@ footer p {
     display: inline-block;
     padding: 5px 10px;
     border-radius: 5px;
->>>>>>> 3e212b71c20407fff9d948bd95977d2335403e8c
 }
 
 @media (max-width: 1024px) {
