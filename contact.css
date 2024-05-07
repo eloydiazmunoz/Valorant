@@ -1,69 +1,89 @@
+/* Asegura que el cos ocupi tota l'alçada */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* El contenidor principal s'expandeix per omplir l'espai restant */
+main {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estils del formulari de contacte */
 #contact-form {
-    width: 60%; /* Amplada del formulari */
-    margin: 50px auto; /* Marge superior i inferior automàtic, marge lateral automàtic */
-    padding: 20px; /* Farciment intern del formulari */
-    background: rgba(255, 255, 255, 0.9); /* Fons blanc amb opacitat */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra */
-    border-radius: 8px; /* Radi de la vora */
-    text-align: center; /* Alineació del text */
-    font-family: 'Arial', sans-serif; /* Família de font */
+    width: 60%;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
 #contact-form h2 {
-    color: #333; /* Color del títol */
-    margin-bottom: 30px; /* Marge inferior del títol */
+    color: #333;
+    margin-bottom: 30px;
 }
 
 #contact-form form {
-    display: flex; /* Estableix el contenidor com a flexible */
-    flex-direction: column; /* Direcció dels elements com a columna */
-    align-items: center; /* Alinea els elements al centre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact-form label {
-    margin-bottom: 5px; /* Marge inferior de les etiquetes */
-    font-size: 16px; /* Mida de font de les etiquetes */
-    color: #666; /* Color de les etiquetes */
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
 }
 
 #contact-form input[type="text"],
 #contact-form input[type="email"],
 #contact-form textarea {
-    width: 90%; /* Amplada dels camps d'entrada */
-    padding: 12px; /* Farciment intern dels camps d'entrada */
-    margin-bottom: 20px; /* Marge inferior dels camps d'entrada */
-    border: 1px solid #ccc; /* Vora dels camps d'entrada */
-    border-radius: 5px; /* Radi de la vora dels camps d'entrada */
-    font-size: 14px; /* Mida de font dels camps d'entrada */
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
 }
 
 #contact-form textarea {
-    height: 120px; /* Alçada de l'àrea de text */
-    resize: none; /* Evita que l'àrea de text sigui redimensionable */
+    height: 120px;
+    resize: none;
 }
 
 #contact-form input[type="submit"] {
-    width: 50%; /* Amplada del botó d'enviar */
-    padding: 10px; /* Farciment intern del botó d'enviar */
-    background-color: #007bff; /* Color de fons del botó d'enviar */
-    color: white; /* Color del text del botó d'enviar */
-    border: none; /* Sense vora */
-    border-radius: 5px; /* Radi de la vora del botó d'enviar */
-    cursor: pointer; /* Canvia el cursor a una mà en passar sobre el botó */
-    font-size: 16px; /* Mida de font del botó d'enviar */
-    transition: background-color 0.3s; /* Transició suau del color de fons */
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 #contact-form input[type="submit"]:hover {
-    background-color: #0056b3; /* Canvia el color de fons en passar sobre el botó */
+    background-color: #0056b3;
 }
+
+/* Estils del footer */
 footer {
-    text-align: center; /* Centra el contenido del footer */
+    text-align: center;
     padding: 20px 0;
-    background-color: #0a0a4f; /* Azul oscuro */
+    background-color: #0a0a4f;
     color: #fff;
     width: 100%;
     border-top: 2px solid #ff4655;
+    margin-top: auto;
 }
 
 footer p {
@@ -74,11 +94,11 @@ footer p {
     border-radius: 5px;
 }
 
-/* Media Queries for Responsive Form */
+/* Media Queries per a formularis responsius */
 @media (max-width: 768px) {
     #contact-form {
-        width: 90%; /* Amplada del formulari en dispositius amb amplada màxima de 768px */
-        margin-top: 20px; /* Marge superior del formulari */
+        width: 90%;
+        margin-top: 20px;
     }
 
     #contact-form input[type="submit"] {
