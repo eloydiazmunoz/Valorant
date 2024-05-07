@@ -7,6 +7,9 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Mínimo de alto de la ventana */
 }
 
 header {
@@ -57,10 +60,11 @@ main {
     max-width: 100%;
     margin: 20px auto;
     padding: 0 20px;
+    flex: 1;
 }
 
 #hero {
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5562ed28-e365-4049-855f-08212cbd0477/deywt2s-44fab34a-e668-43b6-adc5-ec49c07cf348.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzU1NjJlZDI4LWUzNjUtNDA0OS04NTVmLTA4MjEyY2JkMDQ3N1wvZGV5d3Qycy00NGZhYjM0YS1lNjY4LTQzYjYtYWRjNS1lYzQ5YzA3Y2YzNDguZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.I4tQH08__flz7aWhB1YyupWvz7fdEGGEwRpfMDLezgM');
+    background-image: url('https://w.wallha.com/ws/8/pFLjC5Zf.png');
     background-size: 100% auto;
     background-position: center;
     text-align: center;
@@ -107,7 +111,8 @@ main {
 
 .news-item img {
     width: 100%;
-    height: auto;
+    height: 200px; 
+    object-fit: cover; 
     border-radius: 8px 8px 0 0;
     transition: transform 0.3s ease-in-out;
 }
@@ -145,12 +150,5 @@ footer {
     font-size: 0.9em;
     background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
     background-size: cover;
-}
-
-footer p {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    flex-shrink: 0; 
 }

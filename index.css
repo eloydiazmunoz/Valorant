@@ -53,18 +53,20 @@ nav ul li a:hover, nav ul li a:focus {
 
 main {
     max-width: 100%;
-    margin: 20px auto;
+    margin: 20px 10%;
     padding: 0 20px;
+    flex: 1;
 }
 
 #hero {
-    background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
-    background-size: cover;
+    background-image: url('https://esports.as.com/2022/11/10/valorant/Cypher-protagonista-parche_1627947209_1073887_1440x600.png');
+    background-size: 100% auto;
     background-position: center;
     text-align: center;
     padding: 120px 20px;
     position: relative;
     color: #ffffff;
+    margin-top: 20px;
 }
 
 #hero::before {
@@ -89,6 +91,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+    margin-top: 20px;
 }
 
 .news-link {
@@ -99,14 +102,28 @@ main {
 .news-item {
     background-color: #222222;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+    overflow: hidden;
+    height: auto; /* Auto para que se ajuste al contenido */
 }
 
 .news-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.7);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px; /* Establecer una altura fija */
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.news-item:hover img {
+    transform: scale(1.05);
 }
 
 button {
@@ -118,6 +135,10 @@ button {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
     transition: background-color 0.3s, box-shadow 0.3s;
+    width: calc(100% - 40px); /* Ajustar el ancho */
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 button:hover {
@@ -126,6 +147,9 @@ button:hover {
 }
 
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     background-color: #2b2d42;
@@ -133,12 +157,5 @@ footer {
     font-size: 0.9em;
     background-image: url('https://wallpapercave.com/wp/wp7282546.jpg');
     background-size: cover;
-}
-
-footer p {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    flex-shrink: 0;
 }
