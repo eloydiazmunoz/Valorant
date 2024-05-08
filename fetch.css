@@ -1,199 +1,229 @@
+/* Importo la font Roboto de Google Fonts amb pesos 400 (normal) i 700 (negreta) per utilitzar-la al document */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Reinici */
+/* Aquest bloc de codi realitza un reinici general aplicant les següents regles a tots els elements */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box; /* Inclou vora i farciment en les dimensions de tots els elements */
+    margin: 0; /* Elimina els marges externs predeterminats */
+    padding: 0; /* Elimina els farciments interns predeterminats */
 }
 
+/* Estils per al cos de la pàgina */
 html, body {
     height: 100%; /* Asseguro que l'alçada sigui com a mínim la del viewport */
-    margin: 0;
-    display: flex;
-    flex-direction: column; /* Organitza el contingut de la pàgina verticalment */
+    margin: 0; /* Elimina els marges predeterminats */
+    display: flex; /* Utilitzo flexbox per a alineació i distribució d'elements */
+    flex-direction: column; /* Organitzo el contingut del document verticalment */
 }
 
+/* Estils per al cos del document */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(145deg, #0b0b0b, #ff4655); /* Fons negre i vermell */
-    color: #f5f5f5; /* Text clar per contrast */
-    flex: 1; /* Permet que el body creixi per omplir l'espai */
+    font-family: 'Roboto', sans-serif; /* Utilitzo la font Roboto com a font principal */
+    background: linear-gradient(145deg, #0b0b0b, #ff4655); /* Fons amb degradat de negre a vermell */
+    color: #f5f5f5; /* Text clar per a un bon contrast amb el fons */
+    flex: 1; /* Permet que el cos del document creixi per omplir l'espai disponible */
 }
 
+/* Estils per a l'encapçalament */
 header {
     background: #1c1c1c; /* Color de fons fosc */
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px 5%; /* Farciment de 20 píxels a dalt i a baix, 5% als costats */
+    display: flex; /* Utilitzo flexbox per a alineació i distribució d'elements */
+    justify-content: space-between; /* Alineo els elements a cada extrem */
+    align-items: center; /* Alineo verticalment els elements al centre */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Ombra més fosca */
     border-bottom: 2px solid #ff4655; /* Línia inferior vermella */
 }
 
+/* Estils per a la imatge del logotip a l'encapçalament */
 header img {
-    width: 100px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+    width: 100px; /* Amplada fixa de la imatge */
+    height: auto; /* Manté l'aspecte original de l'alçada */
+    transition: transform 0.3s ease-in-out; /* Transició suau quan es fa hover a la imatge */
 }
 
+/* Efecte d'ampliació de la imatge del logotip quan es passa el ratolí sobre ella */
 header img:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Escala la imatge a un 105% de la seva mida original */
 }
 
+/* Estils per a la barra de navegació */
 nav ul {
-    list-style: none;
-    display: flex;
+    list-style: none; /* Elimino els punts de la llista */
+    display: flex; /* Utilitzo flexbox per a alineació i distribució d'elements */
 }
 
+/* Estils per als elements de la llista de la barra de navegació */
 nav ul li {
-    margin-right: 20px;
+    margin-right: 20px; /* Espaiat a la dreta de cada element de la llista */
 }
 
-nav ul li:last-child {
-    margin-right: 0;
-}
-
+/* Estils per als enllaços de la barra de navegació */
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff; /* Enllaços en blanc */
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none; /* Elimino la subratllat dels enllaços */
+    color: #ffffff; /* Color de text blanc pels enllaços */
+    font-size: 1.1em; /* Mida de la font dels enllaços */
+    font-weight: bold; /* Text en negreta */
+    transition: color 0.3s ease; /* Transició suau quan es canvia el color del text */
 }
 
-nav ul li a:hover, nav ul li a:focus {
-    color: #ffd700; /* Color groc per hover */
+/* Efecte de canvi de color del text dels enllaços en fer hover o focus */
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #ffd700; /* Color groc per a hover o focus */
 }
 
+/* Estils per al contingut principal */
 main {
     flex: 1 0 auto; /* Permet que el main ocupi l'espai restant */
-    max-width: 1200px;
+    max-width: 1200px; /* Amplada màxima del contingut principal */
     width: 100%; /* Ocupa tot l'ample disponible */
-    margin: 20px auto;
-    padding: 0 20px;
+    margin: 20px auto; /* Espaiat a dalt i a baix, i centrat horitzontalment */
+    padding: 0 20px; /* Farci interior de 20 píxels als costats */
     background-color: #1c1c1c; /* Fons fosc per al contingut principal */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; /* Radis de la vora arrodonida */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Ombra més fosca */
 }
 
+/* Estils per al secció de l'hero amb la imatge de fons */
 #hero {
-    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1422334832759c8a/6023a8315f9b2812764c34c4/VAL_State_of_Agents_Banner_v2.jpg');
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    padding: 120px 20px;
-    position: relative;
-    color: #ffffff;
+    background-image: url('https://images.contentstack.io/v3/assets/bltb6530b271fddd0b1/blt1422334832759c8a/6023a8315f9b2812764c34c4/VAL_State_of_Agents_Banner_v2.jpg'); /* Imatge de fons */
+    background-size: cover; /* Escala la imatge per cobrir tot el contenidor */
+    background-position: center; /* Centra la imatge horitzontalment i verticalment */
+    text-align: center; /* Alinia el text al centre */
+    padding: 120px 20px; /* Espaiat interior de 120 píxels a dalt i a baix, 20 píxels als costats */
+    position: relative; /* Posició relativa per al contingut absolut */
+    color: #ffffff; /* Text blanc */
 }
 
+/* Estil per al fons de l'hero amb una superposició semi-translúcida */
 #hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: -1;
+    content: ''; /* Contingut generat pel pseudo-element */
+    position: absolute; /* Posició absoluta per a la superposició */
+    top: 0; /* Ajusta la posició a la part superior */
+    right: 0; /* Ajusta la posició a la part dreta */
+    bottom: 0; /* Ajusta la posició a la part inferior */
+    left: 0; /* Ajusta la posició a la part esquerra */
+    background: rgba(0, 0, 0, 0.6); /* Fons semi-translúcid negre */
+    z-index: -1; /* Posiciona la capa per sota del contingut */
 }
 
+/* Estils per al títol de l'hero */
 #hero h1 {
-    font-size: 3em;
-    font-weight: 700;
-    margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    font-size: 3em; /* Mida de la font */
+    font-weight: 700; /* Pes de la font (negreta) */
+    margin: 0; /* Elimina els marges */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Ombra del text */
 }
 
+/* Estils per al selector d'agents */
 #agent-select {
-    padding: 8px;
-    font-size: 1em;
-    font-family: 'Roboto', sans-serif;
-    border: 2px solid #ff4655; /* Vores vermelles */
-    border-radius: 8px;
-    appearance: none;
+    padding: 8px; /* Espaiat interior */
+    font-size: 1em; /* Mida de la font */
+    font-family: 'Roboto', sans-serif; /* Font Roboto */
+    border: 2px solid #ff4655; /* Vora vermelles */
+    border-radius: 8px; /* Radis de la vora arrodonida */
+    appearance: none; /* Oculta l'aparença predeterminada del selector */
     background-color: #333; /* Fons fosc pel selector */
     color: #f5f5f5; /* Text clar */
-    cursor: pointer;
-    margin-bottom: 20px;
-    margin-top: 10px;
+    cursor: pointer; /* Canvi de cursor al passar per sobre */
+    margin-bottom: 20px; /* Espaiat inferior */
+    margin-top: 10px; /* Espaiat superior */
 }
 
+/* Estils per a la informació de l'agent */
 #agent-info {
-    background-color: #333;
-    padding: 20px;
-    margin-top: 20px;
-    border-radius: 10px;
+    background-color: #333; /* Fons fosc */
+    padding: 20px; /* Espaiat interior */
+    margin-top: 20px; /* Espaiat superior */
+    border-radius: 10px; /* Radis de la vora arrodonida */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5); /* Ombra més fosca */
-    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-    text-align: left;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out; /* Transicions suaus */
+    text-align: left; /* Alínea el text a l'esquerra */
 }
 
+/* Estils per a la imatge de l'agent */
 #agent-info img {
-    width: 100%;
-    max-width: 700px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
+    width: 100%; /* Amplada del 100% */
+    max-width: 700px; /* Amplada màxima */
+    height: auto; /* Manté l'aspecte original de l'alçada */
+    display: block; /* Converteix la imatge en un element de bloc */
+    margin: 20px auto; /* Marges superior i inferior auto, marge lateral 20px */
 }
 
-#agent-info p, #agent-info h1, #agent-info h2, #agent-info ul {
-    margin-bottom: 15px;
+/* Estils per als títols, subtítols i llistes a la informació de l'agent */
+#agent-info p,
+#agent-info h1,
+#agent-info h2,
+#agent-info ul {
+    margin-bottom: 15px; /* Espaiat inferior */
     color: #f5f5f5; /* Text clar */
 }
 
+/* Estils per a les llistes a la informació de l'agent */
 #agent-info ul {
-    padding-left: 20px;
+    padding-left: 20px; /* Espaiat a l'esquerra */
 }
 
+/* Estils per als elements de la llista a la informació de l'agent */
 #agent-info li {
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Espaiat inferior */
 }
 
+/* Estils per al peu de pàgina */
 footer {
     text-align: center; /* Centra el contingut del peu de pàgina */
-    padding: 20px 0;
-    background-color: #0a0a4f; /* Blau fosc */
-    color: #fff;
-    width: 100%;
-    border-top: 2px solid #ff4655;
+    padding: 20px 0; /* Espaiat interior de 20 píxels a dalt i a baix */
+    background-color: #0a0a4f; /* Fons fosc blau */
+    color: #fff; /* Text blanc */
+    width: 100%; /* Ocupa tot l'ample disponible */
+    border-top: 2px solid #ff4655; /* Línia superior vermella */
 }
 
+/* Estils per als paràgrafs al peu de pàgina */
 footer p {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    margin: 0; /* Elimina els marges dels paràgrafs */
+    background: rgba(0, 0, 0, 0.5); /* Fons semi-translúcid */
+    display: inline-block; /* Converteix els paràgrafs en elements de blocs en línia */
+    padding: 5px 10px; /* Espaiat interior */
+    border-radius: 5px; /* Radis de la vora arrodonida */
 }
 
+/* Consultes de mitjans per al disseny adaptable */
 @media (max-width: 768px) {
+    /* Estils per a l'ajust de mida en pantalles petites */
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Cambio la direcció del flexbox a columnar */
     }
 
+    /* Reducció de la mida del text dels enllaços */
     nav ul li a {
-        font-size: 0.9rem;
+        font-size: 0.9rem; /* Mida de la font més petita */
     }
 
+    /* Ajust de marges i farciment del contingut principal */
     main {
-        margin: 20px;
-        padding: 10px;
+        margin: 20px; /* Espaiat a tots els costats */
+        padding: 10px; /* Farciment interior reduït */
     }
 
+    /* Ajust de mida per a la imatge de l'agent */
     #agent-info img {
-        width: 100%;
-        max-width: 200px;
-        height: auto;
-        display: block;
-        margin: 0 auto 10px auto;
+        width: 100%; /* Amplada del 100% */
+        max-width: 200px; /* Amplada màxima */
+        height: auto; /* Manté l'aspecte original de l'alçada */
+        display: block; /* Converteix la imatge en un element de bloc */
+        margin: 0 auto 10px auto; /* Marges superior i inferior automàtics, marge lateral de 10px */
     }
 
+    /* Ajust del padding a l'hero */
     #hero {
-        padding: 60px 20px;
+        padding: 60px 20px; /* Espaiat interior reduït */
     }
 
+    /* Reducció de la mida del títol de l'hero */
     #hero h1 {
-        font-size: 2em;
+        font-size: 2em; /* Mida de la font reduïda */
     }
 }
