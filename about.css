@@ -1,195 +1,193 @@
 /* Reinici Bàsic */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Estableix el marge de tots els elements a 0 */
+    padding: 0; /* Estableix el farciment de tots els elements a 0 */
+    box-sizing: border-box; /* Fa que l'amplada i l'altura d'un element inclougui el seu farciment i vora, evitant canvis en les mides causades per farciments o vores */
 }
 
 /* Estil general del cos */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0a0a0a;
-    color: #e0e0e0;
-    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Estableix la família de tipus de lletra per al cos del document */
+    background-color: #0a0a0a; /* Estableix el color de fons del cos */
+    color: #e0e0e0; /* Estableix el color del text del cos */
+    line-height: 1.6; /* Estableix la relació entre l'alçada de línia i la mida de la font */
 }
 
 /* Estil de la capçalera */
 header {
-    background: linear-gradient(145deg, #ff4655, #2b2d42);
-    padding: 10px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(145deg, #ff4655, #2b2d42); /* Estableix un fons amb degradat lineal per a la capçalera */
+    padding: 10px 5%; /* Estableix el farciment de la capçalera, 10 píxels a dalt i baix, 5% als costats */
+    display: flex; /* Utilitza el model de caixa flexible per a la disposició dels elements de la capçalera */
+    justify-content: space-between; /* Distribueix els elements de la capçalera de manera uniforme al llarg de l'eix principal */
+    align-items: center; /* Centra verticalment els elements de la capçalera */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Afegeix una ombra a la capçalera */
 }
 
-/* Estil de la imatge del logotip */
 header img {
-    width: 120px;
-    height: auto;
-    transition: transform 0.3s ease-in-out;
+    width: 120px; /* Fixa l'amplada de la imatge a 120 píxels */
+    height: auto; /* Manté l'aspecte de l'altura original de la imatge proporcionant una altura automàtica */
+    transition: transform 0.3s ease-in-out; /* Aplica una transició suau d'0.3 segons amb una acceleració uniforme al fer un canvi de transformació (en aquest cas, escala) */
 }
 
 header img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Aplica una escala del 10% a la imatge quan es fa hover sobre ella */
 }
 
 /* Estil de la barra de navegació */
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
+    list-style: none; /* No es mostren marcadors de llista */
+    padding: 0; /* Elimina el farciment interior */
+    display: flex; /* Utilitza flexbox per a alineació i distribució d'elements */
 }
 
 nav ul li {
-    padding: 0 20px;
+    padding: 0 20px; /* Espaiat entre elements de la llista */
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 1.1em;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    text-decoration: none; /* No hi ha subratllat en els enllaços */
+    color: #ffffff; /* Color de text blanc */
+    font-size: 1.1em; /* Mida de font del text */
+    font-weight: bold; /* Font en negreta */
+    transition: color 0.3s ease; /* Transició suau del color del text en l'interacció */
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: #ffd700;
-    text-shadow: 0 0 5px #ffd700;
+nav ul li a:hover, /* Estil dels enllaços en l'estat de pas del ratolí */
+nav ul li a.active { /* Estil dels enllaços en l'estat actiu */
+    color: #ffd700; /* Canvia el color del text a daurat */
+    text-shadow: 0 0 5px #ffd700; /* Ombra de text daurada */
 }
 
 /* Estil del contingut principal */
 main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #1c1c1c;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
-    border-radius: 10px;
+    max-width: 800px; /* Estableix l'amplada màxima del contingut principal */
+    margin: 40px auto; /* Estableix el marge exterior del contingut principal */
+    padding: 20px; /* Farceix el contingut principal */
+    background-color: #1c1c1c; /* Estableix el color de fons del contingut principal */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5); /* Afegeix una ombra al contingut principal */
+    border-radius: 10px; /* Arrodoneix els cantons del contingut principal */
 }
 
 main h1 {
-    color: #ff6347;
-    margin-bottom: 20px;
+    color: #ff6347; /* Estableix el color del títol principal */
+    margin-bottom: 20px; /* Espaiat inferior després del títol principal */
 }
 
-/* Estil dels articles de l'equip */
 #team article {
-    margin-bottom: 30px;
-    padding: 15px;
-    border-left: 5px solid #ff6347;
+    margin-bottom: 30px; /* Espai inferior entre articles */
+    padding: 15px; /* Farcit interior de l'element article */
+    border-left: 5px solid #ff6347; /* Linia esquerra dels articles amb color coral */
 }
 
 #team article:hover {
-    background-color: #292929;
+    background-color: #292929; /* Color de fons quan es passa el ratolí sobre l'article */
 }
 
 #team h2 {
-    color: #ff6347;
-    margin-bottom: 10px;
+    color: #ff6347; /* Color de text coral per als títols h2 */
+    margin-bottom: 10px; /* Espai inferior entre els títols h2 i el contingut següent */
 }
 
 #team p {
-    text-align: justify;
-    margin-bottom: 20px;
+    text-align: justify; /* Text justificat dins dels paràgrafs */
+    margin-bottom: 20px; /* Espai inferior entre paràgrafs */
 }
 
 #team a img {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
-    border-radius: 8px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 50%; /* Amplada de la imatge del 50% del seu contenidor */
+    height: auto; /* Alçada automàtica per mantenir l'aspecte original de la imatge */
+    display: block; /* Converteix la imatge en un element de bloc per a una millor alineació */
+    margin: 10px auto; /* Espaiat a les cantonades de la imatge */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6); /* Ombra de la imatge */
+    border-radius: 8px; /* Radis de la vora arrodonida de la imatge */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transició suau quan es fa hover a la imatge */
 }
 
 #team a:hover img {
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05); /* Efecte d'ampliació de la imatge quan es passa el ratolí sobre ella */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Ombra de la imatge ampliada */
 }
 
 /* Estil del peu de pàgina */
 footer {
     text-align: center; /* Centra el contingut del peu de pàgina */
-    padding: 20px 0;
-    background-color: #0a0a4f; /* Blau fosc */
-    color: #fff;
-    width: 100%;
-    border-top: 2px solid #ff4655;
+    padding: 20px 0; /* Espaiat interior del peu de pàgina, 20px a dalt i a baix, 0 als costats */
+    background-color: #0a0a4f; /* Fons de color blau fosc per al peu de pàgina */
+    color: #fff; /* Color de text blanc */
+    width: 100%; /* Amplada del peu de pàgina que ocupa tot l'ample del seu contenidor */
+    border-top: 2px solid #ff4655; /* Línia superior amb color coral de 2 píxels d'amplada */
 }
 
 footer p {
-    margin: 0;
-    background: rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    padding: 5px 10px;
-    border-radius: 5px;
+    margin: 0; /* Elimina el marge dels paràgrafs dins del peu de pàgina */
+    background: rgba(0, 0, 0, 0.5); /* Fons semitransparent de color negre per als paràgrafs */
+    display: inline-block; /* Converteix els paràgrafs en elements de blocs en línia */
+    padding: 5px 10px; /* Espaiat interior dels paràgrafs, 5px a dalt i abaix, 10px als costats */
+    border-radius: 5px; /* Radis de la vora arrodonida dels paràgrafs */
 }
 
 /* Consultes de mitjans per al disseny adaptable */
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
-        padding: 10px 0;
+        flex-direction: column; /* Modifica la direcció de flexió a columna */
+        padding: 10px 0; /* Farceix de la barra de navegació quan es redueix l'ample de la pantalla */
     }
 
     nav ul li a {
-        font-size: 0.9rem;
-        margin-bottom: 10px;
+        font-size: 0.9rem; /* Redueix la mida de la font dels elements de la barra de navegació */
+        margin-bottom: 10px; /* Espaiat inferior entre elements de la barra de navegació */
     }
 
     main {
-        margin: 20px;
-        padding: 15px;
+        margin: 20px; /* Augmenta el marge del contingut principal */
+        padding: 15px; /* Redueix el farciment del contingut principal */
     }
 
     #team a img {
-        width: 80%;
+        width: 80%; /* Redueix l'amplada de la imatge del 80% del seu contenidor */
     }
 }
 
 @media (max-width: 480px) {
     header {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /* Modifica la direcció de flexió a columna */
+        text-align: center; /* Centra el text a la capçalera */
     }
 
     header img {
-        width: 90px;
+        width: 90px; /* Redueix l'amplada de la imatge a 90 píxels */
     }
 
     nav ul {
-        align-items: center;
+        align-items: center; /* Centra els elements de la barra de navegació verticalment */
     }
 
     nav ul li a {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Redueix la mida de la font dels elements de la barra de navegació */
     }
 
     main {
-        margin: 10px;
-        padding: 10px;
+        margin: 10px; /* Augmenta el marge del contingut principal */
+        padding: 10px; /* Redueix el farciment del contingut principal */
     }
 
     main h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem; /* Redueix la mida de la font del títol principal */
     }
 
     #team article {
-        padding: 10px;
+        padding: 10px; /* Redueix el farciment dels articles */
     }
 
     #team a img {
-        width: 90%;
+        width: 90%; /* Redueix l'amplada de la imatge al 90% del seu contenidor */
     }
 
     footer {
-        padding: 5px;
+        padding: 5px; /* Redueix el farciment del peu de pàgina */
     }
 
     footer p {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /* Redueix la mida de la font del text del peu de pàgina */
     }
 }
